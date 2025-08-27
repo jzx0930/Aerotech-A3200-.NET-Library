@@ -1,0 +1,190 @@
+﻿
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+  <head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8" />
+    <title>Save Method </title>
+    <link rel="stylesheet" type="text/css" href="../styles/presentation.css" />
+    <link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css" />
+    <script type="text/javascript" src="../scripts/script_prototype.js"> </script>
+    <script type="text/javascript" src="../scripts/EventUtilities.js"> </script>
+    <script type="text/javascript" src="../scripts/StyleUtilities.js"> </script>
+    <script type="text/javascript" src="../scripts/SplitScreen.js"> </script>
+    <script type="text/javascript" src="../scripts/ElementCollection.js"> </script>
+    <script type="text/javascript" src="../scripts/MemberFilter.js"> </script>
+    <script type="text/javascript" src="../scripts/CollapsibleSection.js"> </script>
+    <script type="text/javascript" src="../scripts/LanguageFilter.js"> </script>
+    <script type="text/javascript" src="../scripts/CookieDataStore.js"> </script>
+    <meta name="file" content="M_Aerotech_A3200_Parameters_ParameterFile_Save" />
+    
+  </head>
+  <body>
+    <img id="copyImage" style="display:none; height:0; width:0;" src="../icons/copycode.gif" alt="Copy image" title="Copy image" />
+    <img id="copyHoverImage" style="display:none; height:0; width:0;" src="../icons/copycodeHighlight.gif" alt="CopyHover image" title="CopyHover image" />
+    <div id="control">
+      <span class="productTitle">Reference Library</span>
+      <br />
+      <span class="topicTitle">Save Method </span>
+      <br />
+      <div id="toolbar">
+        <span id="chickenFeet">
+          <a href="R_Project.htm">Namespaces</a> ► <a href="N_Aerotech_A3200_Parameters.htm">Aerotech.A3200.Parameters</a> ► <a href="T_Aerotech_A3200_Parameters_ParameterFile.htm">ParameterFile</a> ► <span class="selflink">Save<span class="languageSpecificText"><span class="cs">()</span><span class="vb"></span><span class="cpp">()</span><span class="nu">()</span><span class="fs">()</span></span></span></span>
+        <span id="languageFilter">
+          <select id="languageSelector" onchange="var names = this.value.split(' '); toggleVisibleLanguage(names[1]); lfc.switchLanguage(names[0]); store.set('lang',this.value); store.save();">
+            <option value="CSharp cs">C#</option>
+            <option value="VisualBasic vb">Visual Basic</option>
+            <option value="ManagedCPlusPlus cpp">Visual C++</option>
+          </select>
+        </span>
+      </div>
+    </div>
+    <div id="main">
+      <div class="summary">
+            Saves this parameter file
+            </div>
+      <div class="section">
+        <div class="sectionTitle" onclick="toggleSection(this.parentNode)">
+          <img src="../icons/collapse_all.gif" /> Declaration Syntax</div>
+        <div class="sectionContent">
+          <div id="syntaxSection">
+            <table class="filter">
+              <tr class="tabs" id="syntaxTabs">
+                <td class="tab" x-lang="CSharp" onclick="toggleClass('syntaxTabs','x-lang','CSharp','activeTab','tab'); toggleStyle('syntaxBlocks','x-lang','CSharp','display','block','none');">C#</td>
+                <td class="tab" x-lang="VisualBasic" onclick="toggleClass('syntaxTabs','x-lang','VisualBasic','activeTab','tab'); toggleStyle('syntaxBlocks','x-lang','VisualBasic','display','block','none');">Visual Basic</td>
+                <td class="tab" x-lang="ManagedCPlusPlus" onclick="toggleClass('syntaxTabs','x-lang','ManagedCPlusPlus','activeTab','tab'); toggleStyle('syntaxBlocks','x-lang','ManagedCPlusPlus','display','block','none');">Visual C++</td>
+              </tr>
+            </table>
+            <div id="syntaxBlocks">
+              <div class="code" x-lang="CSharp">
+                <pre xml:space="preserve">
+<span class="keyword">public</span> <span class="keyword">void</span> <span class="identifier">Save</span>()</pre>
+              </div>
+              <div class="code" x-lang="VisualBasic">
+                <pre xml:space="preserve">
+<span class="keyword">Public</span> <span class="keyword">Sub</span> <span class="identifier">Save</span></pre>
+              </div>
+              <div class="code" x-lang="ManagedCPlusPlus">
+                <pre xml:space="preserve">
+<span class="keyword">public</span>:
+<span class="keyword">void</span> <span class="identifier">Save</span>()</pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="sectionTitle" onclick="toggleSection(this.parentNode)">
+          <img src="../icons/collapse_all.gif" /> Examples</div>
+        <div class="sectionContent">
+This example uses the following namespaces: 
+<ul><li>Aerotech.A3200</li><li>Aerotech.A3200.Parameters</li><li>System</li></ul><div class="code" x-lang="ManagedCPlusPlus"><table width="100%" cellspacing="0" cellpadding="0"><tr><th>Visual C++ </th><th><span class="copyCode" onclick="CopyCode(this)" onkeypress="CopyCode_CheckKey(this, event)" onmouseover="ChangeCopyCodeIcon(this)" onmouseout="ChangeCopyCodeIcon(this)" tabindex="0"><img class="copyCodeImage" name="ccImage" align="absmiddle" alt="Copy image" title="Copy image" src="../icons/copycode.gif" />Copy</span></th></tr><tr><td colspan="2"><pre xml:space="preserve">
+
+    try
+    {
+        // Connect to the controller.
+        Controller^ myController = Controller::Connect();
+        // Create a set of default base parameters to base our file off of.
+        BaseParameters^ baseParameters = BaseParameters::Defaults;
+        // Change some typical motor setup parameters from their default values.
+        baseParameters-&gt;Axes["X"]-&gt;Motor-&gt;MotorType-&gt;Value = 0;
+        baseParameters-&gt;Axes["X"]-&gt;Motor-&gt;CyclesPerRev-&gt;Value = 4;
+        baseParameters-&gt;Axes["X"]-&gt;Motor-&gt;CountsPerRev-&gt;Value = 4000;
+        baseParameters-&gt;Axes["X"]-&gt;Feedback-&gt;PositionFeedbackType-&gt;Value = 1;
+        baseParameters-&gt;Axes["X"]-&gt;Feedback-&gt;PositionFeedbackChannel-&gt;Value = 0;
+        baseParameters-&gt;Axes["X"]-&gt;Fault-&gt;Thresholds-&gt;AverageCurrentThreshold-&gt;Value = 1.15f;
+        baseParameters-&gt;Axes["X"]-&gt;Motor-&gt;MaxCurrentClamp-&gt;Value = 4.6f;
+        baseParameters-&gt;Axes["X"]-&gt;CurrentLoop-&gt;CurrentGainKi-&gt;Value = 12000.0f;
+        baseParameters-&gt;Axes["X"]-&gt;CurrentLoop-&gt;CurrentGainKp-&gt;Value = 26000.0f;
+        // Create the parameter file with these new base parameters.
+        ParameterFile^ parameterFile = gcnew ParameterFile("myParameters.prma", baseParameters) ;
+        // Output the path and name of the new parameter file.
+        Console::WriteLine("Parameter File {0} created", parameterFile-&gt;FileInfo-&gt;Name);
+        // Change some other parameters.
+        baseParameters-&gt;Axes["X"]-&gt;Fault-&gt;Thresholds-&gt;PositionErrorThreshold-&gt;Value = 0.001;
+        baseParameters-&gt;Axes["X"]-&gt;Limits-&gt;SoftwareLimitHigh-&gt;Value = -10;
+        baseParameters-&gt;Axes["X"]-&gt;Limits-&gt;SoftwareLimitLow-&gt;Value = 10;
+        // Update the new parameter file with these new changes.
+        parameterFile-&gt;Import(baseParameters);
+        // Save the changes to the parameter file.
+        parameterFile-&gt;Save();
+    }
+    catch (Exception^ ex)
+    {
+        Console::WriteLine("Exception occurred: {0}", ex-&gt;Message);
+    }
+
+</pre></td></tr></table></div><div class="code" x-lang="CSharp"><table width="100%" cellspacing="0" cellpadding="0"><tr><th>C# </th><th><span class="copyCode" onclick="CopyCode(this)" onkeypress="CopyCode_CheckKey(this, event)" onmouseover="ChangeCopyCodeIcon(this)" onmouseout="ChangeCopyCodeIcon(this)" tabindex="0"><img class="copyCodeImage" name="ccImage" align="absmiddle" alt="Copy image" title="Copy image" src="../icons/copycode.gif" />Copy</span></th></tr><tr><td colspan="2"><pre xml:space="preserve">
+
+    try
+    {
+        // Connect to the controller.
+        Controller myController = Controller.Connect();
+        // Create a set of default base parameters to base our file off of.
+        BaseParameters baseParameters = BaseParameters.Defaults;
+        // Change some typical motor setup parameters from their default values.
+        baseParameters.Axes["X"].Motor.MotorType.Value = 0;
+        baseParameters.Axes["X"].Motor.CyclesPerRev.Value = 4;
+        baseParameters.Axes["X"].Motor.CountsPerRev.Value = 4000.0;
+        baseParameters.Axes["X"].Feedback.PositionFeedbackType.Value = 1;
+        baseParameters.Axes["X"].Feedback.PositionFeedbackChannel.Value = 0;
+        baseParameters.Axes["X"].Fault.Thresholds.AverageCurrentThreshold.Value = 1.15f;
+        baseParameters.Axes["X"].Motor.MaxCurrentClamp.Value = 4.6f;
+        baseParameters.Axes["X"].CurrentLoop.CurrentGainKi.Value = 12000.0f;
+        baseParameters.Axes["X"].CurrentLoop.CurrentGainKp.Value = 26000.0f;
+        // Create the parameter file with these new base parameters.
+        ParameterFile parameterFile = new ParameterFile("myParameters.prma", baseParameters);
+        // Output the path and name of the new parameter file.
+        Console.WriteLine("Parameter File {0} created", parameterFile.FileInfo.Name);
+        // Change some other parameters.
+        baseParameters.Axes["X"].Fault.Thresholds.PositionErrorThreshold.Value = 0.001;
+        baseParameters.Axes["X"].Limits.SoftwareLimitHigh.Value = -10.0;
+        baseParameters.Axes["X"].Limits.SoftwareLimitLow.Value = 10.0;
+        // Update the new parameter file with these new changes.
+        parameterFile.Import(baseParameters);
+        // Save the changes to the parameter file.
+        parameterFile.Save();
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine("Exception occurred: {0}", ex.Message);
+    }
+
+</pre></td></tr></table></div><div class="code" x-lang="VisualBasic"><table width="100%" cellspacing="0" cellpadding="0"><tr><th>Visual Basic </th><th><span class="copyCode" onclick="CopyCode(this)" onkeypress="CopyCode_CheckKey(this, event)" onmouseover="ChangeCopyCodeIcon(this)" onmouseout="ChangeCopyCodeIcon(this)" tabindex="0"><img class="copyCodeImage" name="ccImage" align="absmiddle" alt="Copy image" title="Copy image" src="../icons/copycode.gif" />Copy</span></th></tr><tr><td colspan="2"><pre xml:space="preserve">
+
+    Try 
+        ' Connect to the controller.
+        Dim myController As Controller = Controller.Connect
+        ' Create a set of default base parameters to base our file off of.
+        Dim baseParameters As BaseParameters = BaseParameters.Defaults
+        ' Change some typical motor setup parameters from their default values.
+        baseParameters.Axes.Item("X").Motor.MotorType.Value = 0
+        baseParameters.Axes.Item("X").Motor.CyclesPerRev.Value = 4
+        baseParameters.Axes.Item("X").Motor.CountsPerRev.Value = 4000
+        baseParameters.Axes.Item("X").Feedback.PositionFeedbackType.Value = 1
+        baseParameters.Axes.Item("X").Feedback.PositionFeedbackChannel.Value = 0
+        baseParameters.Axes.Item("X").Fault.Thresholds.AverageCurrentThreshold.Value = 1.15!
+        baseParameters.Axes.Item("X").Motor.MaxCurrentClamp.Value = 4.6!
+        baseParameters.Axes.Item("X").CurrentLoop.CurrentGainKi.Value = 12000!
+        baseParameters.Axes.Item("X").CurrentLoop.CurrentGainKp.Value = 26000!
+        ' Create the parameter file with these new base parameters.
+        Dim parameterFile As New ParameterFile("myParameters.prma", baseParameters)
+        ' Output the path and name of the new parameter file.
+        Console.WriteLine("Parameter File {0} created", parameterFile.FileInfo.Name)
+        ' Change some other parameters.
+        baseParameters.Axes.Item("X").Fault.Thresholds.PositionErrorThreshold.Value = 0.001
+        baseParameters.Axes.Item("X").Limits.SoftwareLimitHigh.Value = -10
+        baseParameters.Axes.Item("X").Limits.SoftwareLimitLow.Value = 10
+        ' Update the new parameter file with these new changes.
+        parameterFile.Import(baseParameters)
+        ' Save the changes to the parameter file.
+        parameterFile.Save
+    Catch ex As Exception
+        Console.WriteLine("Exception occurred: {0}", ex.Message)
+    End Try
+
+</pre></td></tr></table></div></div>
+      </div>
+      <div id="footer">(c) Aerotech, Inc. All rights reserved. </div>
+      <p>Assembly: <span sdata="assembly">Aerotech.A3200</span> (Module: Aerotech.A3200.dll) Version: 6.4.3.32</p>
+    </div>
+  </body>
+</html>
