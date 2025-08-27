@@ -1,0 +1,208 @@
+﻿
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+  <head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8" />
+    <title>MessageClearCallbackOccurred Event</title>
+    <link rel="stylesheet" type="text/css" href="../styles/presentation.css" />
+    <link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css" />
+    <script type="text/javascript" src="../scripts/script_prototype.js"> </script>
+    <script type="text/javascript" src="../scripts/EventUtilities.js"> </script>
+    <script type="text/javascript" src="../scripts/StyleUtilities.js"> </script>
+    <script type="text/javascript" src="../scripts/SplitScreen.js"> </script>
+    <script type="text/javascript" src="../scripts/ElementCollection.js"> </script>
+    <script type="text/javascript" src="../scripts/MemberFilter.js"> </script>
+    <script type="text/javascript" src="../scripts/CollapsibleSection.js"> </script>
+    <script type="text/javascript" src="../scripts/LanguageFilter.js"> </script>
+    <script type="text/javascript" src="../scripts/CookieDataStore.js"> </script>
+    <meta name="file" content="E_Aerotech_A3200_Callbacks_TaskCallbackContainer_MessageClearCallbackOccurred" />
+    
+  </head>
+  <body>
+    <img id="copyImage" style="display:none; height:0; width:0;" src="../icons/copycode.gif" alt="Copy image" title="Copy image" />
+    <img id="copyHoverImage" style="display:none; height:0; width:0;" src="../icons/copycodeHighlight.gif" alt="CopyHover image" title="CopyHover image" />
+    <div id="control">
+      <span class="productTitle">Reference Library</span>
+      <br />
+      <span class="topicTitle">MessageClearCallbackOccurred Event</span>
+      <br />
+      <div id="toolbar">
+        <span id="chickenFeet">
+          <a href="R_Project.htm">Namespaces</a> ► <a href="N_Aerotech_A3200_Callbacks.htm">Aerotech.A3200.Callbacks</a> ► <a href="T_Aerotech_A3200_Callbacks_TaskCallbackContainer.htm">TaskCallbackContainer</a> ► <span class="selflink">MessageClearCallbackOccurred</span></span>
+        <span id="languageFilter">
+          <select id="languageSelector" onchange="var names = this.value.split(' '); toggleVisibleLanguage(names[1]); lfc.switchLanguage(names[0]); store.set('lang',this.value); store.save();">
+            <option value="CSharp cs">C#</option>
+            <option value="VisualBasic vb">Visual Basic</option>
+            <option value="ManagedCPlusPlus cpp">Visual C++</option>
+          </select>
+        </span>
+      </div>
+    </div>
+    <div id="main">
+      <div class="summary">Raised whenever a <span class="code">MSGCLEAR</span> is done</div>
+      <div class="section">
+        <div class="sectionTitle" onclick="toggleSection(this.parentNode)">
+          <img src="../icons/collapse_all.gif" /> Declaration Syntax</div>
+        <div class="sectionContent">
+          <div id="syntaxSection">
+            <table class="filter">
+              <tr class="tabs" id="syntaxTabs">
+                <td class="tab" x-lang="CSharp" onclick="toggleClass('syntaxTabs','x-lang','CSharp','activeTab','tab'); toggleStyle('syntaxBlocks','x-lang','CSharp','display','block','none');">C#</td>
+                <td class="tab" x-lang="VisualBasic" onclick="toggleClass('syntaxTabs','x-lang','VisualBasic','activeTab','tab'); toggleStyle('syntaxBlocks','x-lang','VisualBasic','display','block','none');">Visual Basic</td>
+                <td class="tab" x-lang="ManagedCPlusPlus" onclick="toggleClass('syntaxTabs','x-lang','ManagedCPlusPlus','activeTab','tab'); toggleStyle('syntaxBlocks','x-lang','ManagedCPlusPlus','display','block','none');">Visual C++</td>
+              </tr>
+            </table>
+            <div id="syntaxBlocks">
+              <div class="code" x-lang="CSharp">
+                <pre xml:space="preserve">
+<span class="keyword">public</span> event <span class="identifier">EventHandler</span>&lt;<span class="identifier">MessageClearCallbackOccurredEventArgs</span>&gt; <span class="identifier">MessageClearCallbackOccurred</span></pre>
+              </div>
+              <div class="code" x-lang="VisualBasic">
+                <pre xml:space="preserve">
+<span class="keyword">Public</span> Event <span class="identifier">MessageClearCallbackOccurred</span> <span class="keyword">As</span> <span class="identifier">EventHandler</span>(<span class="keyword">Of</span> <span class="identifier">MessageClearCallbackOccurredEventArgs</span>)</pre>
+              </div>
+              <div class="code" x-lang="ManagedCPlusPlus">
+                <pre xml:space="preserve">
+<span class="keyword">public</span>:
+ <span class="keyword">event</span> <span class="identifier">EventHandler</span>&lt;<span class="identifier">MessageClearCallbackOccurredEventArgs</span>^&gt;^ <span class="identifier">MessageClearCallbackOccurred</span> {
+	<span class="keyword">void</span> <span class="keyword">add</span> (<span class="identifier">EventHandler</span>&lt;<span class="identifier">MessageClearCallbackOccurredEventArgs</span>^&gt;^ <span class="parameter">value</span>);
+	<span class="keyword">void</span> <span class="keyword">remove</span> (<span class="identifier">EventHandler</span>&lt;<span class="identifier">MessageClearCallbackOccurredEventArgs</span>^&gt;^ <span class="parameter">value</span>);
+}</pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="sectionTitle" onclick="toggleSection(this.parentNode)">
+          <img src="../icons/collapse_all.gif" /> Value</div>
+        <div class="sectionContent">
+          <span class="nolink">EventHandler</span>
+          <span class="languageSpecificText">
+            <span class="cs">&lt;</span>
+            <span class="vb">(Of </span>
+            <span class="cpp">&lt;</span>
+            <span class="nu">(</span>
+            <span class="fs">&lt;'</span>
+          </span>
+          <a href="T_Aerotech_A3200_Callbacks_MessageClearCallbackOccurredEventArgs.htm">MessageClearCallbackOccurredEventArgs</a>
+          <span class="languageSpecificText">
+            <span class="cs">&gt;</span>
+            <span class="vb">)</span>
+            <span class="cpp">&gt;</span>
+            <span class="nu">)</span>
+            <span class="fs">&gt;</span>
+          </span>
+        </div>
+      </div>
+      <div class="section">
+        <div class="sectionTitle" onclick="toggleSection(this.parentNode)">
+          <img src="../icons/collapse_all.gif" /> Examples</div>
+        <div class="sectionContent">
+            This example uses the following namespaces:
+            <ul><li>Aerotech.A3200</li><li>Aerotech.A3200.Callbacks</li><li>System</li></ul><div class="code" x-lang="ManagedCPlusPlus"><table width="100%" cellspacing="0" cellpadding="0"><tr><th>Visual C++ </th><th><span class="copyCode" onclick="CopyCode(this)" onkeypress="CopyCode_CheckKey(this, event)" onmouseover="ChangeCopyCodeIcon(this)" onmouseout="ChangeCopyCodeIcon(this)" tabindex="0"><img class="copyCodeImage" name="ccImage" align="absmiddle" alt="Copy image" title="Copy image" src="../icons/copycode.gif" />Copy</span></th></tr><tr><td colspan="2"><pre xml:space="preserve">
+ref class DisplayCallbackMonitor abstract sealed
+{
+    // Methods
+    public:
+    static void Main(array&lt;String^&gt;^ args)
+    {
+        // Connect to the controller.
+        Controller^ controller = Controller::Connect();
+        // Register for the MSGDISPLAY callback on task 1.
+        controller-&gt;Tasks[TaskId::T01]-&gt;Callbacks-&gt;MessageDisplayCallbackOccurred += gcnew EventHandler&lt;MessageDisplayCallbackOccurredEventArgs^&gt;(NewMessageDisplayCallback);
+        // Register for the MSGCLEAR callback on task 1.
+        controller-&gt;Tasks[TaskId::T01]-&gt;Callbacks-&gt;MessageClearCallbackOccurred += gcnew EventHandler&lt;MessageClearCallbackOccurredEventArgs^&gt;(NewMessageClearCallback);
+        // Raise a MSGDISPLAY callback so our callback handler will print it out.
+        controller-&gt;Commands[TaskId::T01]-&gt;Execute("MSGDISPLAY 1, \"Hello World!\"");
+        // Raise a MSGCLEAR callback so our callback handler will clear the console screen.
+        controller-&gt;Commands[TaskId::T01]-&gt;Execute("MSGCLEAR -1");
+        // Unregister the callback handler for MSGDISPLAY
+        controller-&gt;Tasks[TaskId::T01]-&gt;Callbacks-&gt;MessageDisplayCallbackOccurred -= gcnew EventHandler&lt;MessageDisplayCallbackOccurredEventArgs^&gt;(NewMessageDisplayCallback);
+    }
+    private:
+    static void NewMessageClearCallback(Object^ sender, MessageClearCallbackOccurredEventArgs^ e)
+    {
+        // Clear all messages displayed, regardless of priority
+        Console::Clear();
+    }
+    private:
+    static void NewMessageDisplayCallback(Object^ sender, MessageDisplayCallbackOccurredEventArgs^ e)
+    {
+        // Display the message priority and the message text
+        Console::WriteLine(String::Concat("Priority: ", e-&gt;Priority));
+        Console::WriteLine(String::Concat("Message Text: ", e-&gt;Message));
+    }
+};
+
+</pre></td></tr></table></div><div class="code" x-lang="CSharp"><table width="100%" cellspacing="0" cellpadding="0"><tr><th>C# </th><th><span class="copyCode" onclick="CopyCode(this)" onkeypress="CopyCode_CheckKey(this, event)" onmouseover="ChangeCopyCodeIcon(this)" onmouseout="ChangeCopyCodeIcon(this)" tabindex="0"><img class="copyCodeImage" name="ccImage" align="absmiddle" alt="Copy image" title="Copy image" src="../icons/copycode.gif" />Copy</span></th></tr><tr><td colspan="2"><pre xml:space="preserve">
+internal static class DisplayCallbackMonitor
+{
+    // Methods
+    public static void Main(string[] args)
+    {
+        // Connect to the controller.
+        Controller c = Controller.Connect();
+        // Register for the MSGDISPLAY callback on task 1.
+        c.Tasks[TaskId.T01].Callbacks.MessageDisplayCallbackOccurred += new EventHandler&lt;MessageDisplayCallbackOccurredEventArgs&gt;(DisplayCallbackMonitor.NewMessageDisplayCallback);
+        // Register for the MSGCLEAR callback on task 1.
+        c.Tasks[TaskId.T01].Callbacks.MessageClearCallbackOccurred += new EventHandler&lt;MessageClearCallbackOccurredEventArgs&gt;(DisplayCallbackMonitor.NewMessageClearCallback);
+        // Raise a MSGDISPLAY callback so our callback handler will print it out.
+        c.Commands[TaskId.T01].Execute("MSGDISPLAY 1, \"Hello World!\"");
+        // Raise a MSGCLEAR callback so our callback handler will clear the console screen.
+        c.Commands[TaskId.T01].Execute("MSGCLEAR -1");
+        // Unregister the callback handler for MSGDISPLAY
+        c.Tasks[TaskId.T01].Callbacks.MessageDisplayCallbackOccurred -= new EventHandler&lt;MessageDisplayCallbackOccurredEventArgs&gt;(DisplayCallbackMonitor.NewMessageDisplayCallback);
+    }
+
+    private static void NewMessageClearCallback(object sender, MessageClearCallbackOccurredEventArgs e)
+    {
+        // Clear all messages displayed, regardless of priority
+        Console.Clear();
+    }
+
+    private static void NewMessageDisplayCallback(object sender, MessageDisplayCallbackOccurredEventArgs e)
+    {
+        // Display the message priority and the message text
+        Console.WriteLine("Priority: " + e.Priority);
+        Console.WriteLine("Message Text: " + e.Message);
+    }
+}
+
+</pre></td></tr></table></div><div class="code" x-lang="VisualBasic"><table width="100%" cellspacing="0" cellpadding="0"><tr><th>Visual Basic </th><th><span class="copyCode" onclick="CopyCode(this)" onkeypress="CopyCode_CheckKey(this, event)" onmouseover="ChangeCopyCodeIcon(this)" onmouseout="ChangeCopyCodeIcon(this)" tabindex="0"><img class="copyCodeImage" name="ccImage" align="absmiddle" alt="Copy image" title="Copy image" src="../icons/copycode.gif" />Copy</span></th></tr><tr><td colspan="2"><pre xml:space="preserve">
+Friend Class DisplayCallbackMonitor
+    ' Methods
+    Public Shared Sub Main(ByVal args As String())
+        ' Connect to the controller.
+        Dim c As Controller = Controller.Connect
+        ' Register for the MSGDISPLAY callback on task 1.
+        AddHandler c.Tasks.Item(TaskId.T01).Callbacks.MessageDisplayCallbackOccurred, New EventHandler(Of MessageDisplayCallbackOccurredEventArgs)(AddressOf DisplayCallbackMonitor.NewMessageDisplayCallback)
+        ' Register for the MSGCLEAR callback on task 1.
+        AddHandler c.Tasks.Item(TaskId.T01).Callbacks.MessageClearCallbackOccurred, New EventHandler(Of MessageClearCallbackOccurredEventArgs)(AddressOf DisplayCallbackMonitor.NewMessageClearCallback)
+        ' Raise a MSGDISPLAY callback so our callback handler will print it out.
+        c.Commands.Item(TaskId.T01).Execute("MSGDISPLAY 1, ""Hello World!""")
+        ' Raise a MSGCLEAR callback so our callback handler will clear the console screen.
+        c.Commands.Item(TaskId.T01).Execute("MSGCLEAR -1")
+        ' Unregister the callback handler for MSGDISPLAY
+        RemoveHandler c.Tasks.Item(TaskId.T01).Callbacks.MessageDisplayCallbackOccurred, New EventHandler(Of MessageDisplayCallbackOccurredEventArgs)(AddressOf DisplayCallbackMonitor.NewMessageDisplayCallback)
+    End Sub
+
+    Private Shared Sub NewMessageClearCallback(ByVal sender As Object, ByVal e As MessageClearCallbackOccurredEventArgs)
+        ' Clear all messages displayed, regardless of priority
+        Console.Clear
+    End Sub
+
+    Private Shared Sub NewMessageDisplayCallback(ByVal sender As Object, ByVal e As MessageDisplayCallbackOccurredEventArgs)
+        ' Display the message priority and the message text
+        Console.WriteLine(("Priority: " &amp; e.Priority))
+        Console.WriteLine(("Message Text: " &amp; e.Message))
+    End Sub
+
+End Class
+
+</pre></td></tr></table></div></div>
+      </div>
+      <div id="footer">(c) Aerotech, Inc. All rights reserved. </div>
+      <p>Assembly: <span sdata="assembly">Aerotech.A3200</span> (Module: Aerotech.A3200.dll) Version: 6.4.3.32</p>
+    </div>
+  </body>
+</html>
