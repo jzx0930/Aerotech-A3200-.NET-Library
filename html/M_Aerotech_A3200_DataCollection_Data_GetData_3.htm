@@ -1,0 +1,128 @@
+﻿
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+  <head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8" />
+    <title>GetData Method (pointsToRetrieve, progressChangedEventHandler)</title>
+    <link rel="stylesheet" type="text/css" href="../styles/presentation.css" />
+    <link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css" />
+    <script type="text/javascript" src="../scripts/script_prototype.js"> </script>
+    <script type="text/javascript" src="../scripts/EventUtilities.js"> </script>
+    <script type="text/javascript" src="../scripts/StyleUtilities.js"> </script>
+    <script type="text/javascript" src="../scripts/SplitScreen.js"> </script>
+    <script type="text/javascript" src="../scripts/ElementCollection.js"> </script>
+    <script type="text/javascript" src="../scripts/MemberFilter.js"> </script>
+    <script type="text/javascript" src="../scripts/CollapsibleSection.js"> </script>
+    <script type="text/javascript" src="../scripts/LanguageFilter.js"> </script>
+    <script type="text/javascript" src="../scripts/CookieDataStore.js"> </script>
+    <meta name="file" content="M_Aerotech_A3200_DataCollection_Data_GetData_3" />
+    
+  </head>
+  <body>
+    <img id="copyImage" style="display:none; height:0; width:0;" src="../icons/copycode.gif" alt="Copy image" title="Copy image" />
+    <img id="copyHoverImage" style="display:none; height:0; width:0;" src="../icons/copycodeHighlight.gif" alt="CopyHover image" title="CopyHover image" />
+    <div id="control">
+      <span class="productTitle">Reference Library</span>
+      <br />
+      <span class="topicTitle">GetData Method (pointsToRetrieve, progressChangedEventHandler)</span>
+      <br />
+      <div id="toolbar">
+        <span id="chickenFeet">
+          <a href="R_Project.htm">Namespaces</a> ► <a href="N_Aerotech_A3200_DataCollection.htm">Aerotech.A3200.DataCollection</a> ► <a href="T_Aerotech_A3200_DataCollection_Data.htm">Data</a> ► <span class="selflink">GetData(Int32, ProgressChangedEventHandler)</span></span>
+        <span id="languageFilter">
+          <select id="languageSelector" onchange="var names = this.value.split(' '); toggleVisibleLanguage(names[1]); lfc.switchLanguage(names[0]); store.set('lang',this.value); store.save();">
+            <option value="CSharp cs">C#</option>
+            <option value="VisualBasic vb">Visual Basic</option>
+            <option value="ManagedCPlusPlus cpp">Visual C++</option>
+          </select>
+        </span>
+      </div>
+    </div>
+    <div id="main">
+      <div class="summary">Waits for data to be available and then retrieves all configured data while providing progress of retrieval</div>
+      <div class="section">
+        <div class="sectionTitle" onclick="toggleSection(this.parentNode)">
+          <img src="../icons/collapse_all.gif" /> Declaration Syntax</div>
+        <div class="sectionContent">
+          <div id="syntaxSection">
+            <table class="filter">
+              <tr class="tabs" id="syntaxTabs">
+                <td class="tab" x-lang="CSharp" onclick="toggleClass('syntaxTabs','x-lang','CSharp','activeTab','tab'); toggleStyle('syntaxBlocks','x-lang','CSharp','display','block','none');">C#</td>
+                <td class="tab" x-lang="VisualBasic" onclick="toggleClass('syntaxTabs','x-lang','VisualBasic','activeTab','tab'); toggleStyle('syntaxBlocks','x-lang','VisualBasic','display','block','none');">Visual Basic</td>
+                <td class="tab" x-lang="ManagedCPlusPlus" onclick="toggleClass('syntaxTabs','x-lang','ManagedCPlusPlus','activeTab','tab'); toggleStyle('syntaxBlocks','x-lang','ManagedCPlusPlus','display','block','none');">Visual C++</td>
+              </tr>
+            </table>
+            <div id="syntaxBlocks">
+              <div class="code" x-lang="CSharp">
+                <pre xml:space="preserve">
+<span class="keyword">public</span> <span class="identifier">DataCollectionResults</span> <span class="identifier">GetData</span>(
+	<span class="identifier">int</span> <span class="parameter">pointsToRetrieve</span>,
+	<span class="identifier">ProgressChangedEventHandler</span> <span class="parameter">progressChangedEventHandler</span>
+)</pre>
+              </div>
+              <div class="code" x-lang="VisualBasic">
+                <pre xml:space="preserve">
+<span class="keyword">Public</span> <span class="keyword">Function</span> <span class="identifier">GetData</span> ( _
+	<span class="parameter">pointsToRetrieve</span> <span class="keyword">As</span> <span class="identifier">Integer</span>, _
+	<span class="parameter">progressChangedEventHandler</span> <span class="keyword">As</span> <span class="identifier">ProgressChangedEventHandler</span> _
+) <span class="keyword">As</span> <span class="identifier">DataCollectionResults</span></pre>
+              </div>
+              <div class="code" x-lang="ManagedCPlusPlus">
+                <pre xml:space="preserve">
+<span class="keyword">public</span>:
+<span class="identifier">DataCollectionResults</span>^ <span class="identifier">GetData</span>(
+	<span class="identifier">int</span> <span class="parameter">pointsToRetrieve</span>, 
+	<span class="identifier">ProgressChangedEventHandler</span>^ <span class="parameter">progressChangedEventHandler</span>
+)</pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="parameters">
+        <div class="section">
+          <div class="sectionTitle" onclick="toggleSection(this.parentNode)">
+            <img src="../icons/collapse_all.gif" /> Parameters</div>
+          <div class="sectionContent">
+            <dl paramName="pointsToRetrieve">
+              <dt>
+                <span class="parameter">pointsToRetrieve</span> (<span class="nolink">Int32</span>)</dt>
+              <dd>The number of points to retrieve</dd>
+            </dl>
+            <dl paramName="progressChangedEventHandler">
+              <dt>
+                <span class="parameter">progressChangedEventHandler</span> (<span class="nolink">ProgressChangedEventHandler</span>)</dt>
+              <dd>The delegate to call to provide progress</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="sectionTitle" onclick="toggleSection(this.parentNode)">
+          <img src="../icons/collapse_all.gif" /> Return Value</div>
+        <div class="sectionContent">
+          <a href="T_Aerotech_A3200_DataCollection_DataCollectionResults.htm">DataCollectionResults</a>
+          <br />The collection results</div>
+      </div>
+      <div class="section">
+        <div class="sectionTitle" onclick="toggleSection(this.parentNode)">
+          <img src="../icons/collapse_all.gif" /> Remarks</div>
+        <div class="sectionContent">
+          <p>
+            		The progress provided by the <span class="parameter">progressChangedEventHandler</span>, the progress is provided
+            		for retrieval of the data, <strong>not</strong> for collection of data.
+            	</p>
+          <p>
+            		This call blocks until the number of specified points have been collected,
+            		then retrieves all the points.
+                </p>
+          <p>
+            		The data can be converted to a different set of units, see 
+            		<a href="M_Aerotech_A3200_DataCollection_DataCollectionResults_ConvertUnits.htm">ConvertUnits(UnitInformation)</a> for more details.
+            	</p>
+        </div>
+      </div>
+      <div id="footer">(c) Aerotech, Inc. All rights reserved. </div>
+      <p>Assembly: <span sdata="assembly">Aerotech.A3200</span> (Module: Aerotech.A3200.dll) Version: 6.4.3.32</p>
+    </div>
+  </body>
+</html>

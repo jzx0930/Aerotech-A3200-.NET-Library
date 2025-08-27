@@ -1,0 +1,226 @@
+﻿
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+  <head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8" />
+    <title>StartContinuous Method (configuration, numberOfPoints)</title>
+    <link rel="stylesheet" type="text/css" href="../styles/presentation.css" />
+    <link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css" />
+    <script type="text/javascript" src="../scripts/script_prototype.js"> </script>
+    <script type="text/javascript" src="../scripts/EventUtilities.js"> </script>
+    <script type="text/javascript" src="../scripts/StyleUtilities.js"> </script>
+    <script type="text/javascript" src="../scripts/SplitScreen.js"> </script>
+    <script type="text/javascript" src="../scripts/ElementCollection.js"> </script>
+    <script type="text/javascript" src="../scripts/MemberFilter.js"> </script>
+    <script type="text/javascript" src="../scripts/CollapsibleSection.js"> </script>
+    <script type="text/javascript" src="../scripts/LanguageFilter.js"> </script>
+    <script type="text/javascript" src="../scripts/CookieDataStore.js"> </script>
+    <meta name="file" content="M_Aerotech_A3200_DataCollection_Data_StartContinuous" />
+    
+  </head>
+  <body>
+    <img id="copyImage" style="display:none; height:0; width:0;" src="../icons/copycode.gif" alt="Copy image" title="Copy image" />
+    <img id="copyHoverImage" style="display:none; height:0; width:0;" src="../icons/copycodeHighlight.gif" alt="CopyHover image" title="CopyHover image" />
+    <div id="control">
+      <span class="productTitle">Reference Library</span>
+      <br />
+      <span class="topicTitle">StartContinuous Method (configuration, numberOfPoints)</span>
+      <br />
+      <div id="toolbar">
+        <span id="chickenFeet">
+          <a href="R_Project.htm">Namespaces</a> ► <a href="N_Aerotech_A3200_DataCollection.htm">Aerotech.A3200.DataCollection</a> ► <a href="T_Aerotech_A3200_DataCollection_Data.htm">Data</a> ► <span class="selflink">StartContinuous(DataCollectionConfiguration, Int32)</span></span>
+        <span id="languageFilter">
+          <select id="languageSelector" onchange="var names = this.value.split(' '); toggleVisibleLanguage(names[1]); lfc.switchLanguage(names[0]); store.set('lang',this.value); store.save();">
+            <option value="CSharp cs">C#</option>
+            <option value="VisualBasic vb">Visual Basic</option>
+            <option value="ManagedCPlusPlus cpp">Visual C++</option>
+          </select>
+        </span>
+      </div>
+    </div>
+    <div id="main">
+      <div class="summary">Starts continuous data collection</div>
+      <div class="section">
+        <div class="sectionTitle" onclick="toggleSection(this.parentNode)">
+          <img src="../icons/collapse_all.gif" /> Declaration Syntax</div>
+        <div class="sectionContent">
+          <div id="syntaxSection">
+            <table class="filter">
+              <tr class="tabs" id="syntaxTabs">
+                <td class="tab" x-lang="CSharp" onclick="toggleClass('syntaxTabs','x-lang','CSharp','activeTab','tab'); toggleStyle('syntaxBlocks','x-lang','CSharp','display','block','none');">C#</td>
+                <td class="tab" x-lang="VisualBasic" onclick="toggleClass('syntaxTabs','x-lang','VisualBasic','activeTab','tab'); toggleStyle('syntaxBlocks','x-lang','VisualBasic','display','block','none');">Visual Basic</td>
+                <td class="tab" x-lang="ManagedCPlusPlus" onclick="toggleClass('syntaxTabs','x-lang','ManagedCPlusPlus','activeTab','tab'); toggleStyle('syntaxBlocks','x-lang','ManagedCPlusPlus','display','block','none');">Visual C++</td>
+              </tr>
+            </table>
+            <div id="syntaxBlocks">
+              <div class="code" x-lang="CSharp">
+                <pre xml:space="preserve">
+<span class="keyword">public</span> <span class="keyword">void</span> <span class="identifier">StartContinuous</span>(
+	<span class="identifier">DataCollectionConfiguration</span> <span class="parameter">configuration</span>,
+	<span class="identifier">int</span> <span class="parameter">numberOfPoints</span>
+)</pre>
+              </div>
+              <div class="code" x-lang="VisualBasic">
+                <pre xml:space="preserve">
+<span class="keyword">Public</span> <span class="keyword">Sub</span> <span class="identifier">StartContinuous</span> ( _
+	<span class="parameter">configuration</span> <span class="keyword">As</span> <span class="identifier">DataCollectionConfiguration</span>, _
+	<span class="parameter">numberOfPoints</span> <span class="keyword">As</span> <span class="identifier">Integer</span> _
+)</pre>
+              </div>
+              <div class="code" x-lang="ManagedCPlusPlus">
+                <pre xml:space="preserve">
+<span class="keyword">public</span>:
+<span class="keyword">void</span> <span class="identifier">StartContinuous</span>(
+	<span class="identifier">DataCollectionConfiguration</span>^ <span class="parameter">configuration</span>, 
+	<span class="identifier">int</span> <span class="parameter">numberOfPoints</span>
+)</pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="parameters">
+        <div class="section">
+          <div class="sectionTitle" onclick="toggleSection(this.parentNode)">
+            <img src="../icons/collapse_all.gif" /> Parameters</div>
+          <div class="sectionContent">
+            <dl paramName="configuration">
+              <dt>
+                <span class="parameter">configuration</span> (<a href="T_Aerotech_A3200_DataCollection_DataCollectionConfiguration.htm">DataCollectionConfiguration</a>)</dt>
+              <dd>The configuration to use</dd>
+            </dl>
+            <dl paramName="numberOfPoints">
+              <dt>
+                <span class="parameter">numberOfPoints</span> (<span class="nolink">Int32</span>)</dt>
+              <dd>The size of the chunks to retrieve (0 to not retrieve automatically)</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="sectionTitle" onclick="toggleSection(this.parentNode)">
+          <img src="../icons/collapse_all.gif" /> Remarks</div>
+        <div class="sectionContent">
+          <p>
+            		After an amount equal to <span class="parameter">numberOfPoints</span> has been retrieved,
+            		the <a href="E_Aerotech_A3200_DataCollection_Data_ContinuousDataSamplesRetrieved.htm">ContinuousDataSamplesRetrieved</a> event will be raised.
+            	</p>
+          <p>
+            		The data will be collected in a circular buffer.
+            	</p>
+          <p>
+            		Note that the <a href="P_Aerotech_A3200_DataCollection_DataCollectionConfiguration_PointsToCollect.htm">PointsToCollect</a>
+            		should be larger than <span class="parameter">numberOfPoints</span> to not cause overflow.
+            	</p>
+          <p>
+            		If the event is not desired and you would rather retrieve the data yourself,
+            		set <span class="parameter">numberOfPoints</span> to 0.
+            	</p>
+        </div>
+      </div>
+      <div class="section">
+        <div class="sectionTitle" onclick="toggleSection(this.parentNode)">
+          <img src="../icons/collapse_all.gif" /> Examples</div>
+        <div class="sectionContent">
+            This example uses the following namespaces:
+            <ul><li>Aerotech.A3200</li><li>Aerotech.A3200.DataCollection</li><li>System</li></ul><div class="code" x-lang="ManagedCPlusPlus"><table width="100%" cellspacing="0" cellpadding="0"><tr><th>Visual C++ </th><th><span class="copyCode" onclick="CopyCode(this)" onkeypress="CopyCode_CheckKey(this, event)" onmouseover="ChangeCopyCodeIcon(this)" onmouseout="ChangeCopyCodeIcon(this)" tabindex="0"><img class="copyCodeImage" name="ccImage" align="absmiddle" alt="Copy image" title="Copy image" src="../icons/copycode.gif" />Copy</span></th></tr><tr><td colspan="2"><pre xml:space="preserve">
+ref class ContinuousDataCollection abstract sealed
+{
+    // Methods
+    public:
+    static void Main(array&lt;String^&gt;^ args)
+    {
+        // Connect to the controller.
+        Controller^ myController = Controller::Connect();
+        // Add position command and position feedback on axis 0 as signals to collect.
+        DataCollectionConfiguration^ config = myController-&gt;DataCollection-&gt;Configuration;
+        config-&gt;Axis-&gt;Add(AxisDataSignal::PositionCommand, 0);
+        config-&gt;Axis-&gt;Add(AxisDataSignal::PositionFeedback, 0);
+        // Collect 1 point of data for the signals every 2 msec
+        myController-&gt;DataCollection-&gt;Configuration-&gt;SampleTrigger-&gt;Time = gcnew SampleTriggerTimeConfiguration(2.0, TimeUnit::Milliseconds);
+        // After 500 points have been collected, raise an event so we receive the points
+        myController-&gt;DataCollection-&gt;ContinuousDataSamplesRetrieved += gcnew EventHandler&lt;ContinuousDataSamplesRetrievedEventArgs^&gt;(NewDataSamplesArrived);
+        myController-&gt;DataCollection-&gt;StartContinuous(500);
+        // Collect data until the user presses a key
+        Console::ReadKey();
+        // Stop continuous data collection
+        myController-&gt;DataCollection-&gt;Stop();
+    }
+    private:
+    static void NewDataSamplesArrived(Object^ sender, ContinuousDataSamplesRetrievedEventArgs^ e)
+    {
+        DataCollectionResults^ results = e-&gt;Results;
+        // Print out the 0th point collected for position command and feedback
+        Console::WriteLine(" Position Command: {0}", results-&gt;Axis[AxisDataSignal::PositionCommand, 0]);
+        Console::WriteLine(" Position Feedback: {0}", results-&gt;Axis[AxisDataSignal::PositionFeedback, 0]);
+    }
+};
+
+</pre></td></tr></table></div><div class="code" x-lang="CSharp"><table width="100%" cellspacing="0" cellpadding="0"><tr><th>C# </th><th><span class="copyCode" onclick="CopyCode(this)" onkeypress="CopyCode_CheckKey(this, event)" onmouseover="ChangeCopyCodeIcon(this)" onmouseout="ChangeCopyCodeIcon(this)" tabindex="0"><img class="copyCodeImage" name="ccImage" align="absmiddle" alt="Copy image" title="Copy image" src="../icons/copycode.gif" />Copy</span></th></tr><tr><td colspan="2"><pre xml:space="preserve">
+internal static class ContinuousDataCollection
+{
+    // Methods
+    public static void Main(string[] args)
+    {
+        // Connect to the controller.
+        Controller myController = Controller.Connect();
+        // Add position command and position feedback on axis 0 as signals to collect.
+        DataCollectionConfiguration config = myController.DataCollection.Configuration;
+        config.Axis.Add(AxisDataSignal.PositionCommand, 0);
+        config.Axis.Add(AxisDataSignal.PositionFeedback, 0);
+        // Collect 1 point of data for the signals every 2 msec
+        myController.DataCollection.Configuration.SampleTrigger.Time = new SampleTriggerTimeConfiguration(2.0, TimeUnit.Milliseconds);
+        // After 500 points have been collected, raise an event so we receive the points
+        myController.DataCollection.ContinuousDataSamplesRetrieved += new EventHandler&lt;ContinuousDataSamplesRetrievedEventArgs&gt;(ContinuousDataCollection.NewDataSamplesArrived);
+        myController.DataCollection.StartContinuous(500);
+        // Collect data until the user presses a key
+        Console.ReadKey();
+        // Stop continuous data collection
+        myController.DataCollection.Stop();
+    }
+
+    private static void NewDataSamplesArrived(object sender, ContinuousDataSamplesRetrievedEventArgs e)
+    {
+        DataCollectionResults results = e.Results;
+        // Print out the 0th point collected for position command and feedback
+        Console.WriteLine(" Position Command: {0}", results.Axis[AxisDataSignal.PositionCommand, 0]);
+        Console.WriteLine(" Position Feedback: {0}", results.Axis[AxisDataSignal.PositionFeedback, 0]);
+    }
+}
+
+</pre></td></tr></table></div><div class="code" x-lang="VisualBasic"><table width="100%" cellspacing="0" cellpadding="0"><tr><th>Visual Basic </th><th><span class="copyCode" onclick="CopyCode(this)" onkeypress="CopyCode_CheckKey(this, event)" onmouseover="ChangeCopyCodeIcon(this)" onmouseout="ChangeCopyCodeIcon(this)" tabindex="0"><img class="copyCodeImage" name="ccImage" align="absmiddle" alt="Copy image" title="Copy image" src="../icons/copycode.gif" />Copy</span></th></tr><tr><td colspan="2"><pre xml:space="preserve">
+Friend Class ContinuousDataCollection
+    ' Methods
+    Public Shared Sub Main(ByVal args As String())
+        ' Connect to the controller.
+        Dim myController As Controller = Controller.Connect
+        ' Add position command and position feedback on axis 0 as signals to collect.
+        Dim config As DataCollectionConfiguration = myController.DataCollection.Configuration
+        config.Axis.Add(AxisDataSignal.PositionCommand, 0)
+        config.Axis.Add(AxisDataSignal.PositionFeedback, 0)
+        ' Collect 1 point of data for the signals every 2 msec
+        myController.DataCollection.Configuration.SampleTrigger.Time = New SampleTriggerTimeConfiguration(2.0, TimeUnit.Milliseconds)
+        ' After 500 points have been collected, raise an event so we receive the points
+        AddHandler myController.DataCollection.ContinuousDataSamplesRetrieved, New EventHandler(Of ContinuousDataSamplesRetrievedEventArgs)(AddressOf ContinuousDataCollection.NewDataSamplesArrived)
+        myController.DataCollection.StartContinuous(500)
+        ' Collect data until the user presses a key
+        Console.ReadKey
+        ' Stop continuous data collection
+        myController.DataCollection.Stop
+    End Sub
+
+    Private Shared Sub NewDataSamplesArrived(ByVal sender As Object, ByVal e As ContinuousDataSamplesRetrievedEventArgs)
+        Dim results As DataCollectionResults = e.Results
+        ' Print out the 0th point collected for position command and feedback
+        Console.WriteLine(" Position Command: {0}", results.Axis.Item(AxisDataSignal.PositionCommand, 0))
+        Console.WriteLine(" Position Feedback: {0}", results.Axis.Item(AxisDataSignal.PositionFeedback, 0))
+    End Sub
+
+End Class
+
+</pre></td></tr></table></div></div>
+      </div>
+      <div id="footer">(c) Aerotech, Inc. All rights reserved. </div>
+      <p>Assembly: <span sdata="assembly">Aerotech.A3200</span> (Module: Aerotech.A3200.dll) Version: 6.4.3.32</p>
+    </div>
+  </body>
+</html>
