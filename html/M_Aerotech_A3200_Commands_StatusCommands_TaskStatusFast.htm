@@ -1,0 +1,151 @@
+﻿
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+  <head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8" />
+    <title>TaskStatusFast Method (Task, DataItem, AdditionalData, ControllerVariable, SampleRate)</title>
+    <link rel="stylesheet" type="text/css" href="../styles/presentation.css" />
+    <link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css" />
+    <script type="text/javascript" src="../scripts/script_prototype.js"> </script>
+    <script type="text/javascript" src="../scripts/EventUtilities.js"> </script>
+    <script type="text/javascript" src="../scripts/StyleUtilities.js"> </script>
+    <script type="text/javascript" src="../scripts/SplitScreen.js"> </script>
+    <script type="text/javascript" src="../scripts/ElementCollection.js"> </script>
+    <script type="text/javascript" src="../scripts/MemberFilter.js"> </script>
+    <script type="text/javascript" src="../scripts/CollapsibleSection.js"> </script>
+    <script type="text/javascript" src="../scripts/LanguageFilter.js"> </script>
+    <script type="text/javascript" src="../scripts/CookieDataStore.js"> </script>
+    <meta name="file" content="M_Aerotech_A3200_Commands_StatusCommands_TaskStatusFast" />
+    
+  </head>
+  <body>
+    <img id="copyImage" style="display:none; height:0; width:0;" src="../icons/copycode.gif" alt="Copy image" title="Copy image" />
+    <img id="copyHoverImage" style="display:none; height:0; width:0;" src="../icons/copycodeHighlight.gif" alt="CopyHover image" title="CopyHover image" />
+    <div id="control">
+      <span class="productTitle">Reference Library</span>
+      <br />
+      <span class="topicTitle">TaskStatusFast Method (Task, DataItem, AdditionalData, ControllerVariable, SampleRate)</span>
+      <br />
+      <div id="toolbar">
+        <span id="chickenFeet">
+          <a href="R_Project.htm">Namespaces</a> ► <a href="N_Aerotech_A3200_Commands.htm">Aerotech.A3200.Commands</a> ► <a href="T_Aerotech_A3200_Commands_StatusCommands.htm">StatusCommands</a> ► <span class="selflink">TaskStatusFast(TaskId, TaskStatusSignal, Int32, String, Int32)</span></span>
+        <span id="languageFilter">
+          <select id="languageSelector" onchange="var names = this.value.split(' '); toggleVisibleLanguage(names[1]); lfc.switchLanguage(names[0]); store.set('lang',this.value); store.save();">
+            <option value="CSharp cs">C#</option>
+            <option value="VisualBasic vb">Visual Basic</option>
+            <option value="ManagedCPlusPlus cpp">Visual C++</option>
+          </select>
+        </span>
+      </div>
+    </div>
+    <div id="main">
+      <div class="summary">Gets the specified status item from the specified task at a rate that is faster than 1 kHz.</div>
+      <div class="section">
+        <div class="sectionTitle" onclick="toggleSection(this.parentNode)">
+          <img src="../icons/collapse_all.gif" /> Declaration Syntax</div>
+        <div class="sectionContent">
+          <div id="syntaxSection">
+            <table class="filter">
+              <tr class="tabs" id="syntaxTabs">
+                <td class="tab" x-lang="CSharp" onclick="toggleClass('syntaxTabs','x-lang','CSharp','activeTab','tab'); toggleStyle('syntaxBlocks','x-lang','CSharp','display','block','none');">C#</td>
+                <td class="tab" x-lang="VisualBasic" onclick="toggleClass('syntaxTabs','x-lang','VisualBasic','activeTab','tab'); toggleStyle('syntaxBlocks','x-lang','VisualBasic','display','block','none');">Visual Basic</td>
+                <td class="tab" x-lang="ManagedCPlusPlus" onclick="toggleClass('syntaxTabs','x-lang','ManagedCPlusPlus','activeTab','tab'); toggleStyle('syntaxBlocks','x-lang','ManagedCPlusPlus','display','block','none');">Visual C++</td>
+              </tr>
+            </table>
+            <div id="syntaxBlocks">
+              <div class="code" x-lang="CSharp">
+                <pre xml:space="preserve">
+<span class="keyword">public</span> <span class="keyword">void</span> <span class="identifier">TaskStatusFast</span>(
+	<span class="identifier">TaskId</span> <span class="parameter">Task</span>,
+	<span class="identifier">TaskStatusSignal</span> <span class="parameter">DataItem</span>,
+	<span class="identifier">int</span> <span class="parameter">AdditionalData</span>,
+	<span class="identifier">string</span> <span class="parameter">ControllerVariable</span>,
+	<span class="identifier">int</span> <span class="parameter">SampleRate</span>
+)</pre>
+              </div>
+              <div class="code" x-lang="VisualBasic">
+                <pre xml:space="preserve">
+<span class="keyword">Public</span> <span class="keyword">Sub</span> <span class="identifier">TaskStatusFast</span> ( _
+	<span class="parameter">Task</span> <span class="keyword">As</span> <span class="identifier">TaskId</span>, _
+	<span class="parameter">DataItem</span> <span class="keyword">As</span> <span class="identifier">TaskStatusSignal</span>, _
+	<span class="parameter">AdditionalData</span> <span class="keyword">As</span> <span class="identifier">Integer</span>, _
+	<span class="parameter">ControllerVariable</span> <span class="keyword">As</span> <span class="identifier">String</span>, _
+	<span class="parameter">SampleRate</span> <span class="keyword">As</span> <span class="identifier">Integer</span> _
+)</pre>
+              </div>
+              <div class="code" x-lang="ManagedCPlusPlus">
+                <pre xml:space="preserve">
+<span class="keyword">public</span>:
+<span class="keyword">void</span> <span class="identifier">TaskStatusFast</span>(
+	<span class="identifier">TaskId</span> <span class="parameter">Task</span>, 
+	<span class="identifier">TaskStatusSignal</span> <span class="parameter">DataItem</span>, 
+	<span class="identifier">int</span> <span class="parameter">AdditionalData</span>, 
+	<span class="identifier">String</span>^ <span class="parameter">ControllerVariable</span>, 
+	<span class="identifier">int</span> <span class="parameter">SampleRate</span>
+)</pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="parameters">
+        <div class="section">
+          <div class="sectionTitle" onclick="toggleSection(this.parentNode)">
+            <img src="../icons/collapse_all.gif" /> Parameters</div>
+          <div class="sectionContent">
+            <dl paramName="Task">
+              <dt>
+                <span class="parameter">Task</span> (<a href="T_Aerotech_A3200_TaskId.htm">TaskId</a>)</dt>
+              <dd>The task from which to retrieve the status items. To retrieve the status items from the current task, use $taskindex as the value.</dd>
+            </dl>
+            <dl paramName="DataItem">
+              <dt>
+                <span class="parameter">DataItem</span> (<a href="T_Aerotech_A3200_Status_TaskStatusSignal.htm">TaskStatusSignal</a>)</dt>
+              <dd>Specifies the task status to retrieve. Table: TASK STATUS Data Items shows the values that you can use.</dd>
+            </dl>
+            <dl paramName="AdditionalData">
+              <dt>
+                <span class="parameter">AdditionalData</span> (<span class="nolink">Int32</span>)</dt>
+              <dd>Additional data for the specified data item. Some data items require additional data. If additional data is not required, specify a value of 0 for this argument.</dd>
+            </dl>
+            <dl paramName="ControllerVariable">
+              <dt>
+                <span class="parameter">ControllerVariable</span> (<span class="nolink">String</span>)</dt>
+              <dd>The controller variable on which to retrieve the data. The value of the controller variable must be sufficient to store the number of samples specified by the &lt;SampleRate&gt; argument.</dd>
+            </dl>
+            <dl paramName="SampleRate">
+              <dt>
+                <span class="parameter">SampleRate</span> (<span class="nolink">Int32</span>)</dt>
+              <dd>The number of samples to collect. This must be 1, 2, 4, 8, 16, 24, or 48.</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="sectionTitle" onclick="toggleSection(this.parentNode)">
+          <img src="../icons/collapse_all.gif" /> Remarks</div>
+        <div class="sectionContent">
+          <p>
+						This command is the same as
+						<a href="mk:@MSITStore:A3200.chm::/Commands/TASKSTATUSFAST_Command.html">TASKSTATUSFAST</a>
+						in AeroBasic.
+					</p>
+        </div>
+      </div>
+      <div class="section">
+        <div class="sectionTitle" onclick="toggleSection(this.parentNode)">
+          <img src="../icons/collapse_all.gif" /> Examples</div>
+        <div class="sectionContent">
+				These examples use the following namespaces:
+				<ul><li>System</li><li>Aerotech.A3200</li><li>Aerotech.A3200.Commands</li></ul><div class="code" x-lang="CSharp"><table width="100%" cellspacing="0" cellpadding="0"><tr><th>C# </th><th><span class="copyCode" onclick="CopyCode(this)" onkeypress="CopyCode_CheckKey(this, event)" onmouseover="ChangeCopyCodeIcon(this)" onmouseout="ChangeCopyCodeIcon(this)" tabindex="0"><img class="copyCodeImage" name="ccImage" align="absmiddle" alt="Copy image" title="Copy image" src="../icons/copycode.gif" />Copy</span></th></tr><tr><td colspan="2"><pre xml:space="preserve">Controller myController = Controller.Connect();
+myController.Commands.Status.TaskStatusFast(0, 0, 0, "0", 0);
+</pre></td></tr></table></div><div class="code" x-lang="VisualBasic"><table width="100%" cellspacing="0" cellpadding="0"><tr><th>Visual Basic </th><th><span class="copyCode" onclick="CopyCode(this)" onkeypress="CopyCode_CheckKey(this, event)" onmouseover="ChangeCopyCodeIcon(this)" onmouseout="ChangeCopyCodeIcon(this)" tabindex="0"><img class="copyCodeImage" name="ccImage" align="absmiddle" alt="Copy image" title="Copy image" src="../icons/copycode.gif" />Copy</span></th></tr><tr><td colspan="2"><pre xml:space="preserve">Dim myController As Controller = Controller.Connect()
+myController.Commands.Status.TaskStatusFast(0, 0, 0, "0", 0)
+</pre></td></tr></table></div><div class="code" x-lang="ManagedCPlusPlus"><table width="100%" cellspacing="0" cellpadding="0"><tr><th>Visual C++ </th><th><span class="copyCode" onclick="CopyCode(this)" onkeypress="CopyCode_CheckKey(this, event)" onmouseover="ChangeCopyCodeIcon(this)" onmouseout="ChangeCopyCodeIcon(this)" tabindex="0"><img class="copyCodeImage" name="ccImage" align="absmiddle" alt="Copy image" title="Copy image" src="../icons/copycode.gif" />Copy</span></th></tr><tr><td colspan="2"><pre xml:space="preserve">Controller^ myController = Controller::Connect();
+myController-&gt;Commands-&gt;Status-&gt;TaskStatusFast(0, 0, 0, L"0", 0);
+</pre></td></tr></table></div></div>
+      </div>
+      <div id="footer">(c) Aerotech, Inc. All rights reserved. </div>
+      <p>Assembly: <span sdata="assembly">Aerotech.A3200</span> (Module: Aerotech.A3200.dll) Version: 6.4.3.32</p>
+    </div>
+  </body>
+</html>
