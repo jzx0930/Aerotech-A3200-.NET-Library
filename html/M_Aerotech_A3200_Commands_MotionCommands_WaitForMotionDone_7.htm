@@ -1,0 +1,211 @@
+﻿
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+  <head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8" />
+    <title>WaitForMotionDone Method (waitOption, axisName, timeout)</title>
+    <link rel="stylesheet" type="text/css" href="../styles/presentation.css" />
+    <link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css" />
+    <script type="text/javascript" src="../scripts/script_prototype.js"> </script>
+    <script type="text/javascript" src="../scripts/EventUtilities.js"> </script>
+    <script type="text/javascript" src="../scripts/StyleUtilities.js"> </script>
+    <script type="text/javascript" src="../scripts/SplitScreen.js"> </script>
+    <script type="text/javascript" src="../scripts/ElementCollection.js"> </script>
+    <script type="text/javascript" src="../scripts/MemberFilter.js"> </script>
+    <script type="text/javascript" src="../scripts/CollapsibleSection.js"> </script>
+    <script type="text/javascript" src="../scripts/LanguageFilter.js"> </script>
+    <script type="text/javascript" src="../scripts/CookieDataStore.js"> </script>
+    <meta name="file" content="M_Aerotech_A3200_Commands_MotionCommands_WaitForMotionDone_7" />
+    
+  </head>
+  <body>
+    <img id="copyImage" style="display:none; height:0; width:0;" src="../icons/copycode.gif" alt="Copy image" title="Copy image" />
+    <img id="copyHoverImage" style="display:none; height:0; width:0;" src="../icons/copycodeHighlight.gif" alt="CopyHover image" title="CopyHover image" />
+    <div id="control">
+      <span class="productTitle">Reference Library</span>
+      <br />
+      <span class="topicTitle">WaitForMotionDone Method (waitOption, axisName, timeout)</span>
+      <br />
+      <div id="toolbar">
+        <span id="chickenFeet">
+          <a href="R_Project.htm">Namespaces</a> ► <a href="N_Aerotech_A3200_Commands.htm">Aerotech.A3200.Commands</a> ► <a href="T_Aerotech_A3200_Commands_MotionCommands.htm">MotionCommands</a> ► <span class="selflink">WaitForMotionDone(WaitOption, String, Int32)</span></span>
+        <span id="languageFilter">
+          <select id="languageSelector" onchange="var names = this.value.split(' '); toggleVisibleLanguage(names[1]); lfc.switchLanguage(names[0]); store.set('lang',this.value); store.save();">
+            <option value="CSharp cs">C#</option>
+            <option value="VisualBasic vb">Visual Basic</option>
+            <option value="ManagedCPlusPlus cpp">Visual C++</option>
+          </select>
+        </span>
+      </div>
+    </div>
+    <div id="main">
+      <div class="summary">
+					Waits for the move to be done
+				</div>
+      <div class="section">
+        <div class="sectionTitle" onclick="toggleSection(this.parentNode)">
+          <img src="../icons/collapse_all.gif" /> Declaration Syntax</div>
+        <div class="sectionContent">
+          <div id="syntaxSection">
+            <table class="filter">
+              <tr class="tabs" id="syntaxTabs">
+                <td class="tab" x-lang="CSharp" onclick="toggleClass('syntaxTabs','x-lang','CSharp','activeTab','tab'); toggleStyle('syntaxBlocks','x-lang','CSharp','display','block','none');">C#</td>
+                <td class="tab" x-lang="VisualBasic" onclick="toggleClass('syntaxTabs','x-lang','VisualBasic','activeTab','tab'); toggleStyle('syntaxBlocks','x-lang','VisualBasic','display','block','none');">Visual Basic</td>
+                <td class="tab" x-lang="ManagedCPlusPlus" onclick="toggleClass('syntaxTabs','x-lang','ManagedCPlusPlus','activeTab','tab'); toggleStyle('syntaxBlocks','x-lang','ManagedCPlusPlus','display','block','none');">Visual C++</td>
+              </tr>
+            </table>
+            <div id="syntaxBlocks">
+              <div class="code" x-lang="CSharp">
+                <pre xml:space="preserve">
+<span class="keyword">public</span> <span class="identifier">bool</span> <span class="identifier">WaitForMotionDone</span>(
+	<span class="identifier">WaitOption</span> <span class="parameter">waitOption</span>,
+	<span class="identifier">string</span> <span class="parameter">axisName</span>,
+	<span class="identifier">int</span> <span class="parameter">timeout</span>
+)</pre>
+              </div>
+              <div class="code" x-lang="VisualBasic">
+                <pre xml:space="preserve">
+<span class="keyword">Public</span> <span class="keyword">Function</span> <span class="identifier">WaitForMotionDone</span> ( _
+	<span class="parameter">waitOption</span> <span class="keyword">As</span> <span class="identifier">WaitOption</span>, _
+	<span class="parameter">axisName</span> <span class="keyword">As</span> <span class="identifier">String</span>, _
+	<span class="parameter">timeout</span> <span class="keyword">As</span> <span class="identifier">Integer</span> _
+) <span class="keyword">As</span> <span class="identifier">Boolean</span></pre>
+              </div>
+              <div class="code" x-lang="ManagedCPlusPlus">
+                <pre xml:space="preserve">
+<span class="keyword">public</span>:
+<span class="identifier">bool</span> <span class="identifier">WaitForMotionDone</span>(
+	<span class="identifier">WaitOption</span> <span class="parameter">waitOption</span>, 
+	<span class="identifier">String</span>^ <span class="parameter">axisName</span>, 
+	<span class="identifier">int</span> <span class="parameter">timeout</span>
+)</pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="parameters">
+        <div class="section">
+          <div class="sectionTitle" onclick="toggleSection(this.parentNode)">
+            <img src="../icons/collapse_all.gif" /> Parameters</div>
+          <div class="sectionContent">
+            <dl paramName="waitOption">
+              <dt>
+                <span class="parameter">waitOption</span> (<a href="T_Aerotech_A3200_Commands_WaitOption.htm">WaitOption</a>)</dt>
+              <dd>The wait mode that detemines how to wait for motion to be done</dd>
+            </dl>
+            <dl paramName="axisName">
+              <dt>
+                <span class="parameter">axisName</span> (<span class="nolink">String</span>)</dt>
+              <dd>The name of the axis to wait for motion to be done on</dd>
+            </dl>
+            <dl paramName="timeout">
+              <dt>
+                <span class="parameter">timeout</span> (<span class="nolink">Int32</span>)</dt>
+              <dd>The maximum time to wait for before execution is returned to the user program</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="sectionTitle" onclick="toggleSection(this.parentNode)">
+          <img src="../icons/collapse_all.gif" /> Return Value</div>
+        <div class="sectionContent">
+          <span class="nolink">Boolean</span>
+          <br />Whether the move has completed by the time the method returns</div>
+      </div>
+      <div class="section">
+        <div class="sectionTitle" onclick="toggleSection(this.parentNode)">
+          <img src="../icons/collapse_all.gif" /> Remarks</div>
+        <div class="sectionContent">
+					This is similar to the
+					<a href="mk:@MSITStore:A3200.chm::/Commands/WAIT MOVEDONE_Command.html">WAIT MOVEDONE</a>
+					Command
+				</div>
+      </div>
+      <div class="section">
+        <div class="sectionTitle" onclick="toggleSection(this.parentNode)">
+          <img src="../icons/collapse_all.gif" /> Examples</div>
+        <div class="sectionContent">
+This example uses the following namespaces: 
+<ul><li>Aerotech.A3200</li><li>Aerotech.A3200.Commands</li><li>System</li></ul><div class="code" x-lang="ManagedCPlusPlus"><table width="100%" cellspacing="0" cellpadding="0"><tr><th>Visual C++ </th><th><span class="copyCode" onclick="CopyCode(this)" onkeypress="CopyCode_CheckKey(this, event)" onmouseover="ChangeCopyCodeIcon(this)" onmouseout="ChangeCopyCodeIcon(this)" tabindex="0"><img class="copyCodeImage" name="ccImage" align="absmiddle" alt="Copy image" title="Copy image" src="../icons/copycode.gif" />Copy</span></th></tr><tr><td colspan="2"><pre xml:space="preserve">
+
+    try
+    {
+        // Connect to the controller.
+        Controller^ myController = Controller::Connect();
+        // Enable axes 0 and 2.
+        AxesRootCommands^ selectedAxesCommands = myController-&gt;Commands-&gt;Axes-&gt;Select(AxisMask::A02 | AxisMask::A00);
+        selectedAxesCommands-&gt;Motion-&gt;Enable();
+        // Home axes 0 and 2.
+        selectedAxesCommands-&gt;Motion-&gt;Home();
+		// Move axis 0 to 40 at a speed of 10.
+		// Move axis 2 to 20 at a speed of 8.
+		// Command the absolute motion to the controller.
+		myController-&gt;Commands-&gt;Motion-&gt;MoveAbs(0, 40.0, 10.0);
+		myController-&gt;Commands-&gt;Motion-&gt;MoveAbs(2, 20.0, 8.0);
+        // Wait for the motion to complete and be in position. This will pause execution of our
+        // program until the motion is done, unless our timeout of 5 seconds is reached.
+        selectedAxesCommands-&gt;Motion-&gt;WaitForMotionDone(WaitOption::InPosition, 5000);
+        Console::WriteLine("Motion is complete!");
+    }
+    catch (Exception^ ex)
+    {
+        Console::WriteLine("Exception occurred: {0}", ex-&gt;Message);
+    }
+
+</pre></td></tr></table></div><div class="code" x-lang="CSharp"><table width="100%" cellspacing="0" cellpadding="0"><tr><th>C# </th><th><span class="copyCode" onclick="CopyCode(this)" onkeypress="CopyCode_CheckKey(this, event)" onmouseover="ChangeCopyCodeIcon(this)" onmouseout="ChangeCopyCodeIcon(this)" tabindex="0"><img class="copyCodeImage" name="ccImage" align="absmiddle" alt="Copy image" title="Copy image" src="../icons/copycode.gif" />Copy</span></th></tr><tr><td colspan="2"><pre xml:space="preserve">
+
+    try
+    {
+        // Connect to the controller.
+        Controller myController = Controller.Connect();
+        // Enable axes 0 and 2.
+        AxesRootCommands selectedAxesCommands = myController.Commands.Axes.Select(new AxisMask[] { AxisMask.A02 | AxisMask.A00 });
+        selectedAxesCommands.Motion.Enable();
+        // Home axes 0 and 2.
+        selectedAxesCommands.Motion.Home();
+		// Move axis 0 to 40 at a speed of 10.
+		// Move axis 2 to 20 at a speed of 8.
+		// Command the absolute motion to the controller.
+		myController.Commands.Motion.MoveAbs(0, 40.0, 10.0);
+		myController.Commands.Motion.MoveAbs(2, 20.0, 8.0);
+        // Wait for the motion to complete and be in position. This will pause execution of our
+        // program until the motion is done, unless our timeout of 5 seconds is reached.
+        selectedAxesCommands.Motion.WaitForMotionDone(WaitOption.InPosition, 0x1388);
+        Console.WriteLine("Motion is complete!");
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine("Exception occurred: {0}", ex.Message);
+    }
+
+</pre></td></tr></table></div><div class="code" x-lang="VisualBasic"><table width="100%" cellspacing="0" cellpadding="0"><tr><th>Visual Basic </th><th><span class="copyCode" onclick="CopyCode(this)" onkeypress="CopyCode_CheckKey(this, event)" onmouseover="ChangeCopyCodeIcon(this)" onmouseout="ChangeCopyCodeIcon(this)" tabindex="0"><img class="copyCodeImage" name="ccImage" align="absmiddle" alt="Copy image" title="Copy image" src="../icons/copycode.gif" />Copy</span></th></tr><tr><td colspan="2"><pre xml:space="preserve">
+
+    Try 
+        ' Connect to the controller.
+        Dim myController As Controller = Controller.Connect
+        ' Enable axes 0 and 2.
+        Dim selectedAxesCommands As AxesRootCommands = myController.Commands.Axes.Select(New AxisMask() { (AxisMask.A02 Or AxisMask.A00) })
+        selectedAxesCommands.Motion.Enable
+        ' Home axes 0 and 2.
+        selectedAxesCommands.Motion.Home
+		' Move axis 0 to 40 at a speed of 10.
+		' Move axis 2 to 20 at a speed of 8.
+		' Command the absolute motion to the controller.
+		myController.Commands.Motion.MoveAbs(0, 40.0, 10.0);
+		myController.Commands.Motion.MoveAbs(2, 20.0, 8.0);
+        ' Wait for the motion to complete and be in position. This will pause execution of our
+        ' program until the motion is done, unless our timeout of 5 seconds is reached.
+        selectedAxesCommands.Motion.WaitForMotionDone(WaitOption.InPosition, &amp;H1388)
+        Console.WriteLine("Motion is complete!")
+    Catch ex As Exception
+        Console.WriteLine("Exception occurred: {0}", ex.Message)
+    End Try
+
+</pre></td></tr></table></div></div>
+      </div>
+      <div id="footer">(c) Aerotech, Inc. All rights reserved. </div>
+      <p>Assembly: <span sdata="assembly">Aerotech.A3200</span> (Module: Aerotech.A3200.dll) Version: 6.4.3.32</p>
+    </div>
+  </body>
+</html>
