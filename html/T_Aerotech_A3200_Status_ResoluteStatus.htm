@@ -1,0 +1,394 @@
+﻿
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+  <head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8" />
+    <title>ResoluteStatus Class</title>
+    <link rel="stylesheet" type="text/css" href="../styles/presentation.css" />
+    <link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css" />
+    <script type="text/javascript" src="../scripts/script_prototype.js"> </script>
+    <script type="text/javascript" src="../scripts/EventUtilities.js"> </script>
+    <script type="text/javascript" src="../scripts/StyleUtilities.js"> </script>
+    <script type="text/javascript" src="../scripts/SplitScreen.js"> </script>
+    <script type="text/javascript" src="../scripts/ElementCollection.js"> </script>
+    <script type="text/javascript" src="../scripts/MemberFilter.js"> </script>
+    <script type="text/javascript" src="../scripts/CollapsibleSection.js"> </script>
+    <script type="text/javascript" src="../scripts/LanguageFilter.js"> </script>
+    <script type="text/javascript" src="../scripts/CookieDataStore.js"> </script>
+    <meta name="file" content="T_Aerotech_A3200_Status_ResoluteStatus" />
+    
+  </head>
+  <body>
+    <img id="copyImage" style="display:none; height:0; width:0;" src="../icons/copycode.gif" alt="Copy image" title="Copy image" />
+    <img id="copyHoverImage" style="display:none; height:0; width:0;" src="../icons/copycodeHighlight.gif" alt="CopyHover image" title="CopyHover image" />
+    <div id="control">
+      <span class="productTitle">Reference Library</span>
+      <br />
+      <span class="topicTitle">ResoluteStatus Class</span>
+      <br />
+      <div id="toolbar">
+        <span id="chickenFeet">
+          <a href="R_Project.htm">Namespaces</a> ► <a href="N_Aerotech_A3200_Status.htm">Aerotech.A3200.Status</a> ► <span class="selflink">ResoluteStatus</span></span>
+        <span id="languageFilter">
+          <select id="languageSelector" onchange="var names = this.value.split(' '); toggleVisibleLanguage(names[1]); lfc.switchLanguage(names[0]); store.set('lang',this.value); store.save();">
+            <option value="CSharp cs">C#</option>
+            <option value="VisualBasic vb">Visual Basic</option>
+            <option value="ManagedCPlusPlus cpp">Visual C++</option>
+          </select>
+        </span>
+      </div>
+    </div>
+    <div id="main">
+      <div class="summary">Represents Resolute status</div>
+      <div class="section">
+        <div class="sectionTitle" onclick="toggleSection(this.parentNode)">
+          <img src="../icons/collapse_all.gif" /> Declaration Syntax</div>
+        <div class="sectionContent">
+          <div id="syntaxSection">
+            <table class="filter">
+              <tr class="tabs" id="syntaxTabs">
+                <td class="tab" x-lang="CSharp" onclick="toggleClass('syntaxTabs','x-lang','CSharp','activeTab','tab'); toggleStyle('syntaxBlocks','x-lang','CSharp','display','block','none');">C#</td>
+                <td class="tab" x-lang="VisualBasic" onclick="toggleClass('syntaxTabs','x-lang','VisualBasic','activeTab','tab'); toggleStyle('syntaxBlocks','x-lang','VisualBasic','display','block','none');">Visual Basic</td>
+                <td class="tab" x-lang="ManagedCPlusPlus" onclick="toggleClass('syntaxTabs','x-lang','ManagedCPlusPlus','activeTab','tab'); toggleStyle('syntaxBlocks','x-lang','ManagedCPlusPlus','display','block','none');">Visual C++</td>
+              </tr>
+            </table>
+            <div id="syntaxBlocks">
+              <div class="code" x-lang="CSharp">
+                <pre xml:space="preserve">
+<span class="keyword">public</span> <span class="keyword">class</span> <span class="identifier">ResoluteStatus</span></pre>
+              </div>
+              <div class="code" x-lang="VisualBasic">
+                <pre xml:space="preserve">
+<span class="keyword">Public</span> <span class="keyword">Class</span> <span class="identifier">ResoluteStatus</span></pre>
+              </div>
+              <div class="code" x-lang="ManagedCPlusPlus">
+                <pre xml:space="preserve">
+<span class="keyword">public</span> <span class="keyword">ref class</span> <span class="identifier">ResoluteStatus</span></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="sectionTitle" onclick="toggleSection(this.parentNode)">
+          <img src="../icons/collapse_all.gif" /> Members</div>
+        <div class="sectionContent">
+          <div id="allMembersSection">
+            <table class="filter">
+              <tr class="tabs" id="memberTabs">
+                <td class="tab" value="all" onclick="toggleClass('memberTabs','value','all','activeTab','tab'); processSubgroup('all', 'member'); processList('memberList','filterElement','member');">All Members</td>
+                <td class="tab" value="constructor" onclick="toggleClass('memberTabs','value','constructor','activeTab','tab'); processSubgroup('constructor','member');processList('memberList','filterElement','member');">Constructors</td>
+                <td class="tab" value="method" onclick="toggleClass('memberTabs','value','method','activeTab','tab'); processSubgroup('method','member'); processList('memberList','filterElement','member');">Methods</td>
+                <td class="tab" value="property" onclick="toggleClass('memberTabs','value','property','activeTab','tab'); processSubgroup('property','member'); processList('memberList','filterElement','member');">Properties</td>
+              </tr>
+              <tr>
+                <td class="line" colspan="2">
+                  <label for="public">
+                    <input id="public" type="checkbox" checked="true" onclick="toggleCheckState('public',this.checked); processList('memberList','filterElement','member');" />Public</label>
+                  <br />
+                  <label for="protected">
+                    <input id="protected" type="checkbox" checked="true" onclick="toggleCheckState('protected',this.checked); processList('memberList','filterElement','member');" />Protected</label>
+                </td>
+                <td class="line" colspan="2">
+                  <label for="instance">
+                    <input id="instance" type="checkbox" checked="true" onclick="toggleCheckState('instance',this.checked); processList('memberList','filterElement','member');" />Instance</label>
+                  <br />
+                  <label for="static">
+                    <input id="static" type="checkbox" checked="true" onclick="toggleCheckState('static',this.checked); processList('memberList','filterElement','member');" />Static</label>
+                </td>
+                <td class="line" colspan="2">
+                  <label for="declared">
+                    <input id="declared" type="checkbox" checked="true" onclick="toggleCheckState('declared',this.checked); processList('memberList','filterElement','member');" />Declared</label>
+                  <br />
+                  <label for="inherited">
+                    <input id="inherited" type="checkbox" checked="true" onclick="toggleCheckState('inherited',this.checked); processList('memberList','filterElement','member');" />Inherited</label>
+                </td>
+              </tr>
+            </table>
+            <table class="members" id="memberList">
+              <tr>
+                <th class="iconColumn">Icon</th>
+                <th class="nameColumn">Member</th>
+                <th class="descriptionColumn">Description</th>
+              </tr>
+              <tr data="constructor; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Status_ResoluteStatus__ctor.htm">ResoluteStatus<span class="languageSpecificText"><span class="cs">()</span><span class="vb"></span><span class="cpp">()</span><span class="nu">()</span><span class="fs">()</span></span></a>
+                </td>
+                <td>
+                  <div class="summary">Creates a new instance with all things unset (<span class="code">false</span>)</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="constructor; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Status_ResoluteStatus__ctor_1.htm">ResoluteStatus(Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Creates a new instance with given mask value</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="property; public; instance; declared">
+                <td>
+                  <img src="../icons/pubproperty.gif" />
+                </td>
+                <td>
+                  <a href="P_Aerotech_A3200_Status_ResoluteStatus_ActiveBits.htm">ActiveBits</a>
+                </td>
+                <td>
+                  <div class="summary">Returns a list of the active bit names.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="property; public; static; declared">
+                <td>
+                  <img src="../icons/pubproperty.gif" />
+                  <img src="../icons/static.gif" title="static member" />
+                </td>
+                <td>
+                  <a href="P_Aerotech_A3200_Status_ResoluteStatus_BitHelpLinks.htm">BitHelpLinks</a>
+                </td>
+                <td>
+                  <div class="summary">
+            Returns a dictionary of bit value names (keys) and the associated help file link (values)
+            </div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="property; public; static; declared">
+                <td>
+                  <img src="../icons/pubproperty.gif" />
+                  <img src="../icons/static.gif" title="static member" />
+                </td>
+                <td>
+                  <a href="P_Aerotech_A3200_Status_ResoluteStatus_BitValues.htm">BitValues</a>
+                </td>
+                <td>
+                  <div class="summary">
+             Returns a listing of the bit names and their corresponding values
+            </div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="property; public; instance; declared">
+                <td>
+                  <img src="../icons/pubproperty.gif" />
+                </td>
+                <td>
+                  <a href="P_Aerotech_A3200_Status_ResoluteStatus_CRCError.htm">CRCError</a>
+                </td>
+                <td>
+                  <div class="summary">CRC Error</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="property; public; instance; declared">
+                <td>
+                  <img src="../icons/pubproperty.gif" />
+                </td>
+                <td>
+                  <a href="P_Aerotech_A3200_Status_ResoluteStatus_EncoderError.htm">EncoderError</a>
+                </td>
+                <td>
+                  <div class="summary">Encoder Error</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="property; public; instance; declared">
+                <td>
+                  <img src="../icons/pubproperty.gif" />
+                </td>
+                <td>
+                  <a href="P_Aerotech_A3200_Status_ResoluteStatus_EncoderWarning.htm">EncoderWarning</a>
+                </td>
+                <td>
+                  <div class="summary">Encoder Warning</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Status_ResoluteStatus_Equals.htm">Equals(Object)</a>
+                </td>
+                <td>
+                  <div class="summary">
+            Compares this object to another one
+            </div> (Overrides <span class="nolink">Object</span>.<span class="nolink">Equals(Object)</span>.)<br /></td>
+              </tr>
+              <tr data="method; public; static; declared">
+                <td>
+                  <img src="../icons/puboperator.gif" />
+                  <img src="../icons/static.gif" title="static member" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Status_ResoluteStatus_op_Explicit.htm">
+                    <span class="languageSpecificText">
+                      <span class="cs">Explicit</span>
+                      <span class="vb">Narrowing</span>
+                      <span class="cpp">Explicit</span>
+                      <span class="nu">Explicit</span>
+                      <span class="fs">Explicit</span>
+                    </span>(Int32 to ResoluteStatus)</a>
+                </td>
+                <td>
+                  <div class="summary">
+             Converts the enumeration value as an integer to this class
+            </div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; protected; instance; inherited">
+                <td>
+                  <img src="../icons/protmethod.gif" />
+                </td>
+                <td>
+                  <span class="nolink">Finalize<span class="languageSpecificText"><span class="cs">()</span><span class="vb"></span><span class="cpp">()</span><span class="nu">()</span><span class="fs">()</span></span></span>
+                </td>
+                <td>
+                  <div class="summary">Allows an <span class="nolink">Object</span> to attempt to free resources and perform other cleanup operations before the <span class="nolink">Object</span> is reclaimed by garbage collection.</div> (Inherited from <span class="nolink">Object</span>.)<br /></td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Status_ResoluteStatus_GetHashCode.htm">GetHashCode<span class="languageSpecificText"><span class="cs">()</span><span class="vb"></span><span class="cpp">()</span><span class="nu">()</span><span class="fs">()</span></span></a>
+                </td>
+                <td>
+                  <div class="summary">
+            Calculates the hash code for this object
+            </div> (Overrides <span class="nolink">Object</span>.<span class="nolink">GetHashCode<span class="languageSpecificText"><span class="cs">()</span><span class="vb"></span><span class="cpp">()</span><span class="nu">()</span><span class="fs">()</span></span></span>.)<br /></td>
+              </tr>
+              <tr data="method; public; instance; inherited">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <span class="nolink">GetType<span class="languageSpecificText"><span class="cs">()</span><span class="vb"></span><span class="cpp">()</span><span class="nu">()</span><span class="fs">()</span></span></span>
+                </td>
+                <td>
+                  <div class="summary">Gets the <span class="nolink">Type</span> of the current instance.</div> (Inherited from <span class="nolink">Object</span>.)<br /></td>
+              </tr>
+              <tr data="property; public; instance; declared">
+                <td>
+                  <img src="../icons/pubproperty.gif" />
+                </td>
+                <td>
+                  <a href="P_Aerotech_A3200_Status_ResoluteStatus_MaskValue.htm">MaskValue</a>
+                </td>
+                <td>
+                  <div class="summary">
+            The underlying mask value
+            </div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; protected; instance; inherited">
+                <td>
+                  <img src="../icons/protmethod.gif" />
+                </td>
+                <td>
+                  <span class="nolink">MemberwiseClone<span class="languageSpecificText"><span class="cs">()</span><span class="vb"></span><span class="cpp">()</span><span class="nu">()</span><span class="fs">()</span></span></span>
+                </td>
+                <td>
+                  <div class="summary">Creates a shallow copy of the current <span class="nolink">Object</span>.</div> (Inherited from <span class="nolink">Object</span>.)<br /></td>
+              </tr>
+              <tr data="property; public; instance; declared">
+                <td>
+                  <img src="../icons/pubproperty.gif" />
+                </td>
+                <td>
+                  <a href="P_Aerotech_A3200_Status_ResoluteStatus_None.htm">None</a>
+                </td>
+                <td>
+                  <div class="summary">
+            If all the other properties are not set (<span class="code">false</span>)
+            </div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Status_ResoluteStatus_ToString.htm">ToString<span class="languageSpecificText"><span class="cs">()</span><span class="vb"></span><span class="cpp">()</span><span class="nu">()</span><span class="fs">()</span></span></a>
+                </td>
+                <td>
+                  <div class="summary">
+            Converts to a string representation
+            </div> (Overrides <span class="nolink">Object</span>.<span class="nolink">ToString<span class="languageSpecificText"><span class="cs">()</span><span class="vb"></span><span class="cpp">()</span><span class="nu">()</span><span class="fs">()</span></span></span>.)<br /></td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Status_ResoluteStatus_ToString_1.htm">ToString(Boolean)</a>
+                </td>
+                <td>
+                  <div class="summary">
+            Converts to a string representation
+            </div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="property; public; static; declared">
+                <td>
+                  <img src="../icons/pubproperty.gif" />
+                  <img src="../icons/static.gif" title="static member" />
+                </td>
+                <td>
+                  <a href="P_Aerotech_A3200_Status_ResoluteStatus_ValueNames.htm">ValueNames</a>
+                </td>
+                <td>
+                  <div class="summary">
+            Returns a mapping of values to their human readable form.
+            </div>
+                  <br />
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="sectionTitle" onclick="toggleSection(this.parentNode)">
+          <img src="../icons/collapse_all.gif" /> Remarks</div>
+        <div class="sectionContent">This value provides status information about the Resolute encoder interface. The following table describes each bit of this value.</div>
+      </div>
+      <div class="section">
+        <div class="sectionTitle" onclick="toggleSection(this.parentNode)">
+          <img src="../icons/collapse_all.gif" /> Inheritance Hierarchy</div>
+        <div class="sectionContent">
+          <table cellspacing="0" cellpadding="0">
+            <tr>
+              <td colspan="2">
+                <span class="nolink">Object</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="../icons/LastChild.gif" />
+              </td>
+              <td>
+                <span class="selflink">ResoluteStatus</span>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div id="footer">(c) Aerotech, Inc. All rights reserved. </div>
+      <p>Assembly: <span sdata="assembly">Aerotech.A3200</span> (Module: Aerotech.A3200.dll) Version: 6.4.3.32</p>
+    </div>
+  </body>
+</html>
