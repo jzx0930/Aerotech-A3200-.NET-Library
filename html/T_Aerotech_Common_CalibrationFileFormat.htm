@@ -1,0 +1,147 @@
+﻿
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+  <head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8" />
+    <title>CalibrationFileFormat Enumeration</title>
+    <link rel="stylesheet" type="text/css" href="../styles/presentation.css" />
+    <link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css" />
+    <script type="text/javascript" src="../scripts/script_prototype.js"> </script>
+    <script type="text/javascript" src="../scripts/EventUtilities.js"> </script>
+    <script type="text/javascript" src="../scripts/StyleUtilities.js"> </script>
+    <script type="text/javascript" src="../scripts/SplitScreen.js"> </script>
+    <script type="text/javascript" src="../scripts/ElementCollection.js"> </script>
+    <script type="text/javascript" src="../scripts/MemberFilter.js"> </script>
+    <script type="text/javascript" src="../scripts/CollapsibleSection.js"> </script>
+    <script type="text/javascript" src="../scripts/LanguageFilter.js"> </script>
+    <script type="text/javascript" src="../scripts/CookieDataStore.js"> </script>
+    <meta name="file" content="T_Aerotech_Common_CalibrationFileFormat" />
+    
+  </head>
+  <body>
+    <img id="copyImage" style="display:none; height:0; width:0;" src="../icons/copycode.gif" alt="Copy image" title="Copy image" />
+    <img id="copyHoverImage" style="display:none; height:0; width:0;" src="../icons/copycodeHighlight.gif" alt="CopyHover image" title="CopyHover image" />
+    <div id="control">
+      <span class="productTitle">Reference Library</span>
+      <br />
+      <span class="topicTitle">CalibrationFileFormat Enumeration</span>
+      <br />
+      <div id="toolbar">
+        <span id="chickenFeet">
+          <a href="R_Project.htm">Namespaces</a> ► <a href="N_Aerotech_Common.htm">Aerotech.Common</a> ► <span class="selflink">CalibrationFileFormat</span></span>
+        <span id="languageFilter">
+          <select id="languageSelector" onchange="var names = this.value.split(' '); toggleVisibleLanguage(names[1]); lfc.switchLanguage(names[0]); store.set('lang',this.value); store.save();">
+            <option value="CSharp cs">C#</option>
+            <option value="VisualBasic vb">Visual Basic</option>
+            <option value="ManagedCPlusPlus cpp">Visual C++</option>
+          </select>
+        </span>
+      </div>
+    </div>
+    <div id="main">
+      <div class="summary">
+						Specifies what dimension a calibration file is
+					</div>
+      <div class="section">
+        <div class="sectionTitle" onclick="toggleSection(this.parentNode)">
+          <img src="../icons/collapse_all.gif" /> Declaration Syntax</div>
+        <div class="sectionContent">
+          <div id="syntaxSection">
+            <table class="filter">
+              <tr class="tabs" id="syntaxTabs">
+                <td class="tab" x-lang="CSharp" onclick="toggleClass('syntaxTabs','x-lang','CSharp','activeTab','tab'); toggleStyle('syntaxBlocks','x-lang','CSharp','display','block','none');">C#</td>
+                <td class="tab" x-lang="VisualBasic" onclick="toggleClass('syntaxTabs','x-lang','VisualBasic','activeTab','tab'); toggleStyle('syntaxBlocks','x-lang','VisualBasic','display','block','none');">Visual Basic</td>
+                <td class="tab" x-lang="ManagedCPlusPlus" onclick="toggleClass('syntaxTabs','x-lang','ManagedCPlusPlus','activeTab','tab'); toggleStyle('syntaxBlocks','x-lang','ManagedCPlusPlus','display','block','none');">Visual C++</td>
+              </tr>
+            </table>
+            <div id="syntaxBlocks">
+              <div class="code" x-lang="CSharp">
+                <pre xml:space="preserve">
+<span class="keyword">public</span> <span class="keyword">enum</span> <span class="identifier">CalibrationFileFormat</span></pre>
+              </div>
+              <div class="code" x-lang="VisualBasic">
+                <pre xml:space="preserve">
+<span class="keyword">Public</span> <span class="keyword">Enumeration</span> <span class="identifier">CalibrationFileFormat</span></pre>
+              </div>
+              <div class="code" x-lang="ManagedCPlusPlus">
+                <pre xml:space="preserve">
+<span class="keyword">public</span> <span class="keyword">enum class</span> <span class="identifier">CalibrationFileFormat</span></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="enumerationSection">
+        <div class="section">
+          <div class="sectionTitle" onclick="toggleSection(this.parentNode)">
+            <img src="../icons/collapse_all.gif" /> Members</div>
+          <div class="sectionContent">
+            <table class="members" id="memberList">
+              <tr>
+                <th class="nameColumn">Member</th>
+                <th class="descriptionColumn">Description</th>
+              </tr>
+              <tr>
+                <td target="F:Aerotech.Common.CalibrationFileFormat.Unknown">
+                  <b>
+                    <span class="selflink">Unknown</span>
+                  </b>
+                </td>
+                <td>The dimensionality of the calibration file is unknown<br /></td>
+              </tr>
+              <tr>
+                <td target="F:Aerotech.Common.CalibrationFileFormat.Calibration1D">
+                  <b>
+                    <span class="selflink">Calibration1D</span>
+                  </b>
+                </td>
+                <td>The axis calibration file is 1 dimensional<br /></td>
+              </tr>
+              <tr>
+                <td target="F:Aerotech.Common.CalibrationFileFormat.Calibration2D">
+                  <b>
+                    <span class="selflink">Calibration2D</span>
+                  </b>
+                </td>
+                <td>The axis calibration file is 2 dimensional<br /></td>
+              </tr>
+              <tr>
+                <td target="F:Aerotech.Common.CalibrationFileFormat.Galvo2D">
+                  <b>
+                    <span class="selflink">Galvo2D</span>
+                  </b>
+                </td>
+                <td>The galvo calibration file is 2 dimensional<br /></td>
+              </tr>
+              <tr>
+                <td target="F:Aerotech.Common.CalibrationFileFormat.GalvoPowerCorrection">
+                  <b>
+                    <span class="selflink">GalvoPowerCorrection</span>
+                  </b>
+                </td>
+                <td>The galvo power correction file<br /></td>
+              </tr>
+              <tr>
+                <td target="F:Aerotech.Common.CalibrationFileFormat.BinaryCalibration1D">
+                  <b>
+                    <span class="selflink">BinaryCalibration1D</span>
+                  </b>
+                </td>
+                <td>The axis calibration file is binary and 1 dimensional<br /></td>
+              </tr>
+              <tr>
+                <td target="F:Aerotech.Common.CalibrationFileFormat.BinaryCalibration2D">
+                  <b>
+                    <span class="selflink">BinaryCalibration2D</span>
+                  </b>
+                </td>
+                <td>The axis calibration file is binary and 2 dimensional<br /></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div id="footer">(c) Aerotech, Inc. All rights reserved. </div>
+      <p>Assembly: <span sdata="assembly">Aerotech.A3200</span> (Module: Aerotech.A3200.dll) Version: 6.4.3.32</p>
+    </div>
+  </body>
+</html>

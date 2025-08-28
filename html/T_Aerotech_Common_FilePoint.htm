@@ -1,0 +1,276 @@
+﻿
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+  <head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8" />
+    <title>FilePoint Class</title>
+    <link rel="stylesheet" type="text/css" href="../styles/presentation.css" />
+    <link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css" />
+    <script type="text/javascript" src="../scripts/script_prototype.js"> </script>
+    <script type="text/javascript" src="../scripts/EventUtilities.js"> </script>
+    <script type="text/javascript" src="../scripts/StyleUtilities.js"> </script>
+    <script type="text/javascript" src="../scripts/SplitScreen.js"> </script>
+    <script type="text/javascript" src="../scripts/ElementCollection.js"> </script>
+    <script type="text/javascript" src="../scripts/MemberFilter.js"> </script>
+    <script type="text/javascript" src="../scripts/CollapsibleSection.js"> </script>
+    <script type="text/javascript" src="../scripts/LanguageFilter.js"> </script>
+    <script type="text/javascript" src="../scripts/CookieDataStore.js"> </script>
+    <meta name="file" content="T_Aerotech_Common_FilePoint" />
+    
+  </head>
+  <body>
+    <img id="copyImage" style="display:none; height:0; width:0;" src="../icons/copycode.gif" alt="Copy image" title="Copy image" />
+    <img id="copyHoverImage" style="display:none; height:0; width:0;" src="../icons/copycodeHighlight.gif" alt="CopyHover image" title="CopyHover image" />
+    <div id="control">
+      <span class="productTitle">Reference Library</span>
+      <br />
+      <span class="topicTitle">FilePoint Class</span>
+      <br />
+      <div id="toolbar">
+        <span id="chickenFeet">
+          <a href="R_Project.htm">Namespaces</a> ► <a href="N_Aerotech_Common.htm">Aerotech.Common</a> ► <span class="selflink">FilePoint</span></span>
+        <span id="languageFilter">
+          <select id="languageSelector" onchange="var names = this.value.split(' '); toggleVisibleLanguage(names[1]); lfc.switchLanguage(names[0]); store.set('lang',this.value); store.save();">
+            <option value="CSharp cs">C#</option>
+            <option value="VisualBasic vb">Visual Basic</option>
+            <option value="ManagedCPlusPlus cpp">Visual C++</option>
+          </select>
+        </span>
+      </div>
+    </div>
+    <div id="main">
+      <div class="summary">
+            Represents a position in a file (by line number)
+            </div>
+      <div class="section">
+        <div class="sectionTitle" onclick="toggleSection(this.parentNode)">
+          <img src="../icons/collapse_all.gif" /> Declaration Syntax</div>
+        <div class="sectionContent">
+          <div id="syntaxSection">
+            <table class="filter">
+              <tr class="tabs" id="syntaxTabs">
+                <td class="tab" x-lang="CSharp" onclick="toggleClass('syntaxTabs','x-lang','CSharp','activeTab','tab'); toggleStyle('syntaxBlocks','x-lang','CSharp','display','block','none');">C#</td>
+                <td class="tab" x-lang="VisualBasic" onclick="toggleClass('syntaxTabs','x-lang','VisualBasic','activeTab','tab'); toggleStyle('syntaxBlocks','x-lang','VisualBasic','display','block','none');">Visual Basic</td>
+                <td class="tab" x-lang="ManagedCPlusPlus" onclick="toggleClass('syntaxTabs','x-lang','ManagedCPlusPlus','activeTab','tab'); toggleStyle('syntaxBlocks','x-lang','ManagedCPlusPlus','display','block','none');">Visual C++</td>
+              </tr>
+            </table>
+            <div id="syntaxBlocks">
+              <div class="code" x-lang="CSharp">
+                <pre xml:space="preserve">
+<span class="keyword">public</span> <span class="keyword">class</span> <span class="identifier">FilePoint</span> : <span class="identifier">ICloneable</span></pre>
+              </div>
+              <div class="code" x-lang="VisualBasic">
+                <pre xml:space="preserve">
+<span class="keyword">Public</span> <span class="keyword">Class</span> <span class="identifier">FilePoint</span> _
+	<span class="keyword">Implements</span> <span class="identifier">ICloneable</span></pre>
+              </div>
+              <div class="code" x-lang="ManagedCPlusPlus">
+                <pre xml:space="preserve">
+<span class="keyword">public</span> <span class="keyword">ref class</span> <span class="identifier">FilePoint</span> : <span class="identifier">ICloneable</span></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="sectionTitle" onclick="toggleSection(this.parentNode)">
+          <img src="../icons/collapse_all.gif" /> Members</div>
+        <div class="sectionContent">
+          <div id="allMembersSection">
+            <table class="filter">
+              <tr class="tabs" id="memberTabs">
+                <td class="tab" value="all" onclick="toggleClass('memberTabs','value','all','activeTab','tab'); processSubgroup('all', 'member'); processList('memberList','filterElement','member');">All Members</td>
+                <td class="tab" value="constructor" onclick="toggleClass('memberTabs','value','constructor','activeTab','tab'); processSubgroup('constructor','member');processList('memberList','filterElement','member');">Constructors</td>
+                <td class="tab" value="method" onclick="toggleClass('memberTabs','value','method','activeTab','tab'); processSubgroup('method','member'); processList('memberList','filterElement','member');">Methods</td>
+                <td class="tab" value="property" onclick="toggleClass('memberTabs','value','property','activeTab','tab'); processSubgroup('property','member'); processList('memberList','filterElement','member');">Properties</td>
+              </tr>
+              <tr>
+                <td class="line" colspan="2">
+                  <label for="public">
+                    <input id="public" type="checkbox" checked="true" onclick="toggleCheckState('public',this.checked); processList('memberList','filterElement','member');" />Public</label>
+                  <br />
+                  <label for="protected">
+                    <input id="protected" type="checkbox" checked="true" onclick="toggleCheckState('protected',this.checked); processList('memberList','filterElement','member');" />Protected</label>
+                </td>
+                <td class="line" colspan="2">
+                  <label for="instance">
+                    <input id="instance" type="checkbox" checked="true" onclick="toggleCheckState('instance',this.checked); processList('memberList','filterElement','member');" />Instance</label>
+                  <br />
+                  <label for="static">
+                    <input id="static" type="checkbox" checked="true" onclick="toggleCheckState('static',this.checked); processList('memberList','filterElement','member');" />Static</label>
+                </td>
+                <td class="line" colspan="2">
+                  <label for="declared">
+                    <input id="declared" type="checkbox" checked="true" onclick="toggleCheckState('declared',this.checked); processList('memberList','filterElement','member');" />Declared</label>
+                  <br />
+                  <label for="inherited">
+                    <input id="inherited" type="checkbox" checked="true" onclick="toggleCheckState('inherited',this.checked); processList('memberList','filterElement','member');" />Inherited</label>
+                </td>
+              </tr>
+            </table>
+            <table class="members" id="memberList">
+              <tr>
+                <th class="iconColumn">Icon</th>
+                <th class="nameColumn">Member</th>
+                <th class="descriptionColumn">Description</th>
+              </tr>
+              <tr data="constructor; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_Common_FilePoint__ctor.htm">FilePoint(String, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">
+            Creates a new file point given name and line number
+            </div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_Common_FilePoint_Clone.htm">Clone<span class="languageSpecificText"><span class="cs">()</span><span class="vb"></span><span class="cpp">()</span><span class="nu">()</span><span class="fs">()</span></span></a>
+                </td>
+                <td>
+                  <div class="summary">
+            Clones the current object
+            </div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_Common_FilePoint_Equals.htm">Equals(Object)</a>
+                </td>
+                <td>
+                  <div class="summary">
+            Compares the current file point to another one
+            </div> (Overrides <span class="nolink">Object</span>.<span class="nolink">Equals(Object)</span>.)<br /></td>
+              </tr>
+              <tr data="method; protected; instance; inherited">
+                <td>
+                  <img src="../icons/protmethod.gif" />
+                </td>
+                <td>
+                  <span class="nolink">Finalize<span class="languageSpecificText"><span class="cs">()</span><span class="vb"></span><span class="cpp">()</span><span class="nu">()</span><span class="fs">()</span></span></span>
+                </td>
+                <td>
+                  <div class="summary">Allows an <span class="nolink">Object</span> to attempt to free resources and perform other cleanup operations before the <span class="nolink">Object</span> is reclaimed by garbage collection.</div> (Inherited from <span class="nolink">Object</span>.)<br /></td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_Common_FilePoint_GetHashCode.htm">GetHashCode<span class="languageSpecificText"><span class="cs">()</span><span class="vb"></span><span class="cpp">()</span><span class="nu">()</span><span class="fs">()</span></span></a>
+                </td>
+                <td>
+                  <div class="summary">
+            Generates a hash code for this class
+            </div> (Overrides <span class="nolink">Object</span>.<span class="nolink">GetHashCode<span class="languageSpecificText"><span class="cs">()</span><span class="vb"></span><span class="cpp">()</span><span class="nu">()</span><span class="fs">()</span></span></span>.)<br /></td>
+              </tr>
+              <tr data="method; public; instance; inherited">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <span class="nolink">GetType<span class="languageSpecificText"><span class="cs">()</span><span class="vb"></span><span class="cpp">()</span><span class="nu">()</span><span class="fs">()</span></span></span>
+                </td>
+                <td>
+                  <div class="summary">Gets the <span class="nolink">Type</span> of the current instance.</div> (Inherited from <span class="nolink">Object</span>.)<br /></td>
+              </tr>
+              <tr data="property; public; instance; declared">
+                <td>
+                  <img src="../icons/pubproperty.gif" />
+                </td>
+                <td>
+                  <a href="P_Aerotech_Common_FilePoint_LineNumber.htm">LineNumber</a>
+                </td>
+                <td>
+                  <div class="summary">
+            Returns the line number
+            </div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; protected; instance; inherited">
+                <td>
+                  <img src="../icons/protmethod.gif" />
+                </td>
+                <td>
+                  <span class="nolink">MemberwiseClone<span class="languageSpecificText"><span class="cs">()</span><span class="vb"></span><span class="cpp">()</span><span class="nu">()</span><span class="fs">()</span></span></span>
+                </td>
+                <td>
+                  <div class="summary">Creates a shallow copy of the current <span class="nolink">Object</span>.</div> (Inherited from <span class="nolink">Object</span>.)<br /></td>
+              </tr>
+              <tr data="property; public; instance; declared">
+                <td>
+                  <img src="../icons/pubproperty.gif" />
+                </td>
+                <td>
+                  <a href="P_Aerotech_Common_FilePoint_Path.htm">Path</a>
+                </td>
+                <td>
+                  <div class="summary">
+            Returns the path to the file
+            </div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_Common_FilePoint_ToString.htm">ToString<span class="languageSpecificText"><span class="cs">()</span><span class="vb"></span><span class="cpp">()</span><span class="nu">()</span><span class="fs">()</span></span></a>
+                </td>
+                <td>
+                  <div class="summary">
+            Converts to a string representation
+            </div> (Overrides <span class="nolink">Object</span>.<span class="nolink">ToString<span class="languageSpecificText"><span class="cs">()</span><span class="vb"></span><span class="cpp">()</span><span class="nu">()</span><span class="fs">()</span></span></span>.)<br /></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="sectionTitle" onclick="toggleSection(this.parentNode)">
+          <img src="../icons/collapse_all.gif" /> Inheritance Hierarchy</div>
+        <div class="sectionContent">
+          <table cellspacing="0" cellpadding="0">
+            <tr>
+              <td colspan="3">
+                <span class="nolink">Object</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="../icons/LastChild.gif" />
+              </td>
+              <td colspan="2">
+                <span class="selflink">FilePoint</span>
+              </td>
+            </tr>
+            <tr>
+              <td> </td>
+              <td>
+                <img src="../icons/LastChild.gif" />
+              </td>
+              <td>
+                <a href="T_Aerotech_A3200_Tasks_ProgramFilePoint.htm">ProgramFilePoint</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div id="footer">(c) Aerotech, Inc. All rights reserved. </div>
+      <p>Assembly: <span sdata="assembly">Aerotech.Common</span> (Module: Aerotech.Common.dll) Version: 3.17.0.66</p>
+    </div>
+  </body>
+</html>
