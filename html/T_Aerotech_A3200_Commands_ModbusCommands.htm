@@ -1,0 +1,570 @@
+﻿
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+  <head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8" />
+    <title>ModbusCommands Class</title>
+    <link rel="stylesheet" type="text/css" href="../styles/presentation.css" />
+    <link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css" />
+    <script type="text/javascript" src="../scripts/script_prototype.js"> </script>
+    <script type="text/javascript" src="../scripts/EventUtilities.js"> </script>
+    <script type="text/javascript" src="../scripts/StyleUtilities.js"> </script>
+    <script type="text/javascript" src="../scripts/SplitScreen.js"> </script>
+    <script type="text/javascript" src="../scripts/ElementCollection.js"> </script>
+    <script type="text/javascript" src="../scripts/MemberFilter.js"> </script>
+    <script type="text/javascript" src="../scripts/CollapsibleSection.js"> </script>
+    <script type="text/javascript" src="../scripts/LanguageFilter.js"> </script>
+    <script type="text/javascript" src="../scripts/CookieDataStore.js"> </script>
+    <meta name="file" content="T_Aerotech_A3200_Commands_ModbusCommands" />
+    
+  </head>
+  <body>
+    <img id="copyImage" style="display:none; height:0; width:0;" src="../icons/copycode.gif" alt="Copy image" title="Copy image" />
+    <img id="copyHoverImage" style="display:none; height:0; width:0;" src="../icons/copycodeHighlight.gif" alt="CopyHover image" title="CopyHover image" />
+    <div id="control">
+      <span class="productTitle">Reference Library</span>
+      <br />
+      <span class="topicTitle">ModbusCommands Class</span>
+      <br />
+      <div id="toolbar">
+        <span id="chickenFeet">
+          <a href="R_Project.htm">Namespaces</a> ► <a href="N_Aerotech_A3200_Commands.htm">Aerotech.A3200.Commands</a> ► <span class="selflink">ModbusCommands</span></span>
+        <span id="languageFilter">
+          <select id="languageSelector" onchange="var names = this.value.split(' '); toggleVisibleLanguage(names[1]); lfc.switchLanguage(names[0]); store.set('lang',this.value); store.save();">
+            <option value="CSharp cs">C#</option>
+            <option value="VisualBasic vb">Visual Basic</option>
+            <option value="ManagedCPlusPlus cpp">Visual C++</option>
+          </select>
+        </span>
+      </div>
+    </div>
+    <div id="main">
+      <div class="summary">Contains the Modbus Commands</div>
+      <div class="section">
+        <div class="sectionTitle" onclick="toggleSection(this.parentNode)">
+          <img src="../icons/collapse_all.gif" /> Declaration Syntax</div>
+        <div class="sectionContent">
+          <div id="syntaxSection">
+            <table class="filter">
+              <tr class="tabs" id="syntaxTabs">
+                <td class="tab" x-lang="CSharp" onclick="toggleClass('syntaxTabs','x-lang','CSharp','activeTab','tab'); toggleStyle('syntaxBlocks','x-lang','CSharp','display','block','none');">C#</td>
+                <td class="tab" x-lang="VisualBasic" onclick="toggleClass('syntaxTabs','x-lang','VisualBasic','activeTab','tab'); toggleStyle('syntaxBlocks','x-lang','VisualBasic','display','block','none');">Visual Basic</td>
+                <td class="tab" x-lang="ManagedCPlusPlus" onclick="toggleClass('syntaxTabs','x-lang','ManagedCPlusPlus','activeTab','tab'); toggleStyle('syntaxBlocks','x-lang','ManagedCPlusPlus','display','block','none');">Visual C++</td>
+              </tr>
+            </table>
+            <div id="syntaxBlocks">
+              <div class="code" x-lang="CSharp">
+                <pre xml:space="preserve">
+<span class="keyword">public</span> <span class="keyword">class</span> <span class="identifier">ModbusCommands</span> : <span class="identifier">CommandCategory</span></pre>
+              </div>
+              <div class="code" x-lang="VisualBasic">
+                <pre xml:space="preserve">
+<span class="keyword">Public</span> <span class="keyword">Class</span> <span class="identifier">ModbusCommands</span> _
+	<span class="keyword">Inherits</span> <span class="identifier">CommandCategory</span></pre>
+              </div>
+              <div class="code" x-lang="ManagedCPlusPlus">
+                <pre xml:space="preserve">
+<span class="keyword">public</span> <span class="keyword">ref class</span> <span class="identifier">ModbusCommands</span> : <span class="keyword">public</span> <span class="identifier">CommandCategory</span></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="sectionTitle" onclick="toggleSection(this.parentNode)">
+          <img src="../icons/collapse_all.gif" /> Members</div>
+        <div class="sectionContent">
+          <div id="allMembersSection">
+            <table class="filter">
+              <tr class="tabs" id="memberTabs">
+                <td class="tab" value="all" onclick="toggleClass('memberTabs','value','all','activeTab','tab'); processSubgroup('all', 'member'); processList('memberList','filterElement','member');">All Members</td>
+                <td class="tab" value="method" onclick="toggleClass('memberTabs','value','method','activeTab','tab'); processSubgroup('method','member'); processList('memberList','filterElement','member');">Methods</td>
+              </tr>
+              <tr>
+                <td class="line" colspan="2">
+                  <label for="public">
+                    <input id="public" type="checkbox" checked="true" onclick="toggleCheckState('public',this.checked); processList('memberList','filterElement','member');" />Public</label>
+                  <br />
+                  <label for="protected">
+                    <input id="protected" type="checkbox" checked="true" onclick="toggleCheckState('protected',this.checked); processList('memberList','filterElement','member');" />Protected</label>
+                </td>
+                <td class="line" colspan="2">
+                  <label for="instance">
+                    <input id="instance" type="checkbox" checked="true" onclick="toggleCheckState('instance',this.checked); processList('memberList','filterElement','member');" />Instance</label>
+                  <br />
+                  <label for="static">
+                    <input id="static" type="checkbox" checked="true" onclick="toggleCheckState('static',this.checked); processList('memberList','filterElement','member');" />Static</label>
+                </td>
+                <td class="line" colspan="2">
+                  <label for="declared">
+                    <input id="declared" type="checkbox" checked="true" onclick="toggleCheckState('declared',this.checked); processList('memberList','filterElement','member');" />Declared</label>
+                  <br />
+                  <label for="inherited">
+                    <input id="inherited" type="checkbox" checked="true" onclick="toggleCheckState('inherited',this.checked); processList('memberList','filterElement','member');" />Inherited</label>
+                </td>
+              </tr>
+            </table>
+            <table class="members" id="memberList">
+              <tr>
+                <th class="iconColumn">Icon</th>
+                <th class="nameColumn">Member</th>
+                <th class="descriptionColumn">Description</th>
+              </tr>
+              <tr data="method; public; instance; inherited">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <span class="nolink">Equals(Object)</span>
+                </td>
+                <td>
+                  <div class="summary">Determines whether the specified <span class="nolink">Object</span> is equal to the current <span class="nolink">Object</span>.</div> (Inherited from <span class="nolink">Object</span>.)<br /></td>
+              </tr>
+              <tr data="method; protected; instance; inherited">
+                <td>
+                  <img src="../icons/protmethod.gif" />
+                </td>
+                <td>
+                  <span class="nolink">Finalize<span class="languageSpecificText"><span class="cs">()</span><span class="vb"></span><span class="cpp">()</span><span class="nu">()</span><span class="fs">()</span></span></span>
+                </td>
+                <td>
+                  <div class="summary">Allows an <span class="nolink">Object</span> to attempt to free resources and perform other cleanup operations before the <span class="nolink">Object</span> is reclaimed by garbage collection.</div> (Inherited from <span class="nolink">Object</span>.)<br /></td>
+              </tr>
+              <tr data="method; public; instance; inherited">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <span class="nolink">GetHashCode<span class="languageSpecificText"><span class="cs">()</span><span class="vb"></span><span class="cpp">()</span><span class="nu">()</span><span class="fs">()</span></span></span>
+                </td>
+                <td>
+                  <div class="summary">Serves as a hash function for a particular type. <span class="nolink">GetHashCode<span class="languageSpecificText"><span class="cs">()</span><span class="vb"></span><span class="cpp">()</span><span class="nu">()</span><span class="fs">()</span></span></span> is suitable for use in hashing algorithms and data structures like a hash table.</div> (Inherited from <span class="nolink">Object</span>.)<br /></td>
+              </tr>
+              <tr data="method; public; instance; inherited">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <span class="nolink">GetType<span class="languageSpecificText"><span class="cs">()</span><span class="vb"></span><span class="cpp">()</span><span class="nu">()</span><span class="fs">()</span></span></span>
+                </td>
+                <td>
+                  <div class="summary">Gets the <span class="nolink">Type</span> of the current instance.</div> (Inherited from <span class="nolink">Object</span>.)<br /></td>
+              </tr>
+              <tr data="method; protected; instance; inherited">
+                <td>
+                  <img src="../icons/protmethod.gif" />
+                </td>
+                <td>
+                  <span class="nolink">MemberwiseClone<span class="languageSpecificText"><span class="cs">()</span><span class="vb"></span><span class="cpp">()</span><span class="nu">()</span><span class="fs">()</span></span></span>
+                </td>
+                <td>
+                  <div class="summary">Creates a shallow copy of the current <span class="nolink">Object</span>.</div> (Inherited from <span class="nolink">Object</span>.)<br /></td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_ModbusCommands_ReadBit.htm">ReadBit(RegisterType, Int32)</a>
+                </td>
+                <td> <span class="obsolete">Obsolete.</span><div class="summary">Provides access to a Modbus bit set.</div><br /></td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_ModbusCommands_ReadBit_1.htm">ReadBit(Int32, RegisterType, Int32)</a>
+                </td>
+                <td> <span class="obsolete">Obsolete.</span><div class="summary">Provides access to a Modbus bit set.</div><br /></td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_ModbusCommands_ReadDriveBit.htm">ReadDriveBit(Int32, RegisterType, Int32)</a>
+                </td>
+                <td> <span class="obsolete">Obsolete.</span><div class="summary">Provides access to a Modbus bit set.</div><br /></td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_ModbusCommands_ReadDriveBit_1.htm">ReadDriveBit(String, RegisterType, Int32)</a>
+                </td>
+                <td> <span class="obsolete">Obsolete.</span><div class="summary">Provides access to a Modbus bit set.</div><br /></td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_ModbusCommands_ReadDriveRegisterDouble.htm">ReadDriveRegisterDouble(Int32, RegisterType, Int32)</a>
+                </td>
+                <td> <span class="obsolete">Obsolete.</span><div class="summary">Provides access to a Modbus register set as double-precision floating-point values.</div><br /></td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_ModbusCommands_ReadDriveRegisterDouble_1.htm">ReadDriveRegisterDouble(String, RegisterType, Int32)</a>
+                </td>
+                <td> <span class="obsolete">Obsolete.</span><div class="summary">Provides access to a Modbus register set as double-precision floating-point values.</div><br /></td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_ModbusCommands_ReadDriveRegisterFloat.htm">ReadDriveRegisterFloat(Int32, RegisterType, Int32)</a>
+                </td>
+                <td> <span class="obsolete">Obsolete.</span><div class="summary">Provides access to a Modbus register set as single-precision floating-point values.</div><br /></td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_ModbusCommands_ReadDriveRegisterFloat_1.htm">ReadDriveRegisterFloat(String, RegisterType, Int32)</a>
+                </td>
+                <td> <span class="obsolete">Obsolete.</span><div class="summary">Provides access to a Modbus register set as single-precision floating-point values.</div><br /></td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_ModbusCommands_ReadDriveRegisterInt16.htm">ReadDriveRegisterInt16(Int32, RegisterType, Int32)</a>
+                </td>
+                <td> <span class="obsolete">Obsolete.</span><div class="summary">Provides access to a Modbus register set as 16-bit integer values.</div><br /></td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_ModbusCommands_ReadDriveRegisterInt16_1.htm">ReadDriveRegisterInt16(String, RegisterType, Int32)</a>
+                </td>
+                <td> <span class="obsolete">Obsolete.</span><div class="summary">Provides access to a Modbus register set as 16-bit integer values.</div><br /></td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_ModbusCommands_ReadDriveRegisterInt32.htm">ReadDriveRegisterInt32(Int32, RegisterType, Int32)</a>
+                </td>
+                <td> <span class="obsolete">Obsolete.</span><div class="summary">Provides access to a Modbus register set as 32-bit integer values.</div><br /></td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_ModbusCommands_ReadDriveRegisterInt32_1.htm">ReadDriveRegisterInt32(String, RegisterType, Int32)</a>
+                </td>
+                <td> <span class="obsolete">Obsolete.</span><div class="summary">Provides access to a Modbus register set as 32-bit integer values.</div><br /></td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_ModbusCommands_ReadRegisterDouble.htm">ReadRegisterDouble(RegisterType, Int32)</a>
+                </td>
+                <td> <span class="obsolete">Obsolete.</span><div class="summary">Provides access to a Modbus register set as double-precision floating-point values.</div><br /></td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_ModbusCommands_ReadRegisterDouble_1.htm">ReadRegisterDouble(Int32, RegisterType, Int32)</a>
+                </td>
+                <td> <span class="obsolete">Obsolete.</span><div class="summary">Provides access to a Modbus register set as double-precision floating-point values.</div><br /></td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_ModbusCommands_ReadRegisterFloat.htm">ReadRegisterFloat(RegisterType, Int32)</a>
+                </td>
+                <td> <span class="obsolete">Obsolete.</span><div class="summary">Provides access to a Modbus register set as single-precision floating-point values.</div><br /></td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_ModbusCommands_ReadRegisterFloat_1.htm">ReadRegisterFloat(Int32, RegisterType, Int32)</a>
+                </td>
+                <td> <span class="obsolete">Obsolete.</span><div class="summary">Provides access to a Modbus register set as single-precision floating-point values.</div><br /></td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_ModbusCommands_ReadRegisterInt16.htm">ReadRegisterInt16(RegisterType, Int32)</a>
+                </td>
+                <td> <span class="obsolete">Obsolete.</span><div class="summary">Provides access to a Modbus register set as 16-bit integer values.</div><br /></td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_ModbusCommands_ReadRegisterInt16_1.htm">ReadRegisterInt16(Int32, RegisterType, Int32)</a>
+                </td>
+                <td> <span class="obsolete">Obsolete.</span><div class="summary">Provides access to a Modbus register set as 16-bit integer values.</div><br /></td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_ModbusCommands_ReadRegisterInt32.htm">ReadRegisterInt32(RegisterType, Int32)</a>
+                </td>
+                <td> <span class="obsolete">Obsolete.</span><div class="summary">Provides access to a Modbus register set as 32-bit integer values.</div><br /></td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_ModbusCommands_ReadRegisterInt32_1.htm">ReadRegisterInt32(Int32, RegisterType, Int32)</a>
+                </td>
+                <td> <span class="obsolete">Obsolete.</span><div class="summary">Provides access to a Modbus register set as 32-bit integer values.</div><br /></td>
+              </tr>
+              <tr data="method; public; instance; inherited">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <span class="nolink">ToString<span class="languageSpecificText"><span class="cs">()</span><span class="vb"></span><span class="cpp">()</span><span class="nu">()</span><span class="fs">()</span></span></span>
+                </td>
+                <td>
+                  <div class="summary">Returns a <span class="nolink">String</span> that represents the current <span class="nolink">Object</span>.</div> (Inherited from <span class="nolink">Object</span>.)<br /></td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_ModbusCommands_WriteBit.htm">WriteBit(RegisterType, Int32, Int32)</a>
+                </td>
+                <td> <span class="obsolete">Obsolete.</span><div class="summary">Provides access to a Modbus bit set.</div><br /></td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_ModbusCommands_WriteBit_1.htm">WriteBit(Int32, RegisterType, Int32, Int32)</a>
+                </td>
+                <td> <span class="obsolete">Obsolete.</span><div class="summary">Provides access to a Modbus bit set.</div><br /></td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_ModbusCommands_WriteDriveBit.htm">WriteDriveBit(Int32, RegisterType, Int32, Int32)</a>
+                </td>
+                <td> <span class="obsolete">Obsolete.</span><div class="summary">Provides access to a Modbus bit set.</div><br /></td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_ModbusCommands_WriteDriveBit_1.htm">WriteDriveBit(String, RegisterType, Int32, Int32)</a>
+                </td>
+                <td> <span class="obsolete">Obsolete.</span><div class="summary">Provides access to a Modbus bit set.</div><br /></td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_ModbusCommands_WriteDriveRegisterDouble.htm">WriteDriveRegisterDouble(Int32, RegisterType, Int32, Double)</a>
+                </td>
+                <td> <span class="obsolete">Obsolete.</span><div class="summary">Provides access to a Modbus register set as double-precision floating-point values.</div><br /></td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_ModbusCommands_WriteDriveRegisterDouble_1.htm">WriteDriveRegisterDouble(String, RegisterType, Int32, Double)</a>
+                </td>
+                <td> <span class="obsolete">Obsolete.</span><div class="summary">Provides access to a Modbus register set as double-precision floating-point values.</div><br /></td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_ModbusCommands_WriteDriveRegisterFloat.htm">WriteDriveRegisterFloat(Int32, RegisterType, Int32, Single)</a>
+                </td>
+                <td> <span class="obsolete">Obsolete.</span><div class="summary">Provides access to a Modbus register set as single-precision floating-point values.</div><br /></td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_ModbusCommands_WriteDriveRegisterFloat_1.htm">WriteDriveRegisterFloat(String, RegisterType, Int32, Single)</a>
+                </td>
+                <td> <span class="obsolete">Obsolete.</span><div class="summary">Provides access to a Modbus register set as single-precision floating-point values.</div><br /></td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_ModbusCommands_WriteDriveRegisterInt16.htm">WriteDriveRegisterInt16(Int32, RegisterType, Int32, Int32)</a>
+                </td>
+                <td> <span class="obsolete">Obsolete.</span><div class="summary">Provides access to a Modbus register set as 16-bit integer values.</div><br /></td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_ModbusCommands_WriteDriveRegisterInt16_1.htm">WriteDriveRegisterInt16(String, RegisterType, Int32, Int32)</a>
+                </td>
+                <td> <span class="obsolete">Obsolete.</span><div class="summary">Provides access to a Modbus register set as 16-bit integer values.</div><br /></td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_ModbusCommands_WriteDriveRegisterInt32.htm">WriteDriveRegisterInt32(Int32, RegisterType, Int32, Int32)</a>
+                </td>
+                <td> <span class="obsolete">Obsolete.</span><div class="summary">Provides access to a Modbus register set as 32-bit integer values.</div><br /></td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_ModbusCommands_WriteDriveRegisterInt32_1.htm">WriteDriveRegisterInt32(String, RegisterType, Int32, Int32)</a>
+                </td>
+                <td> <span class="obsolete">Obsolete.</span><div class="summary">Provides access to a Modbus register set as 32-bit integer values.</div><br /></td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_ModbusCommands_WriteRegisterDouble.htm">WriteRegisterDouble(RegisterType, Int32, Double)</a>
+                </td>
+                <td> <span class="obsolete">Obsolete.</span><div class="summary">Provides access to a Modbus register set as double-precision floating-point values.</div><br /></td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_ModbusCommands_WriteRegisterDouble_1.htm">WriteRegisterDouble(Int32, RegisterType, Int32, Double)</a>
+                </td>
+                <td> <span class="obsolete">Obsolete.</span><div class="summary">Provides access to a Modbus register set as double-precision floating-point values.</div><br /></td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_ModbusCommands_WriteRegisterFloat.htm">WriteRegisterFloat(RegisterType, Int32, Single)</a>
+                </td>
+                <td> <span class="obsolete">Obsolete.</span><div class="summary">Provides access to a Modbus register set as single-precision floating-point values.</div><br /></td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_ModbusCommands_WriteRegisterFloat_1.htm">WriteRegisterFloat(Int32, RegisterType, Int32, Single)</a>
+                </td>
+                <td> <span class="obsolete">Obsolete.</span><div class="summary">Provides access to a Modbus register set as single-precision floating-point values.</div><br /></td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_ModbusCommands_WriteRegisterInt16.htm">WriteRegisterInt16(RegisterType, Int32, Int32)</a>
+                </td>
+                <td> <span class="obsolete">Obsolete.</span><div class="summary">Provides access to a Modbus register set as 16-bit integer values.</div><br /></td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_ModbusCommands_WriteRegisterInt16_1.htm">WriteRegisterInt16(Int32, RegisterType, Int32, Int32)</a>
+                </td>
+                <td> <span class="obsolete">Obsolete.</span><div class="summary">Provides access to a Modbus register set as 16-bit integer values.</div><br /></td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_ModbusCommands_WriteRegisterInt32.htm">WriteRegisterInt32(RegisterType, Int32, Int32)</a>
+                </td>
+                <td> <span class="obsolete">Obsolete.</span><div class="summary">Provides access to a Modbus register set as 32-bit integer values.</div><br /></td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_ModbusCommands_WriteRegisterInt32_1.htm">WriteRegisterInt32(Int32, RegisterType, Int32, Int32)</a>
+                </td>
+                <td> <span class="obsolete">Obsolete.</span><div class="summary">Provides access to a Modbus register set as 32-bit integer values.</div><br /></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="sectionTitle" onclick="toggleSection(this.parentNode)">
+          <img src="../icons/collapse_all.gif" /> Inheritance Hierarchy</div>
+        <div class="sectionContent">
+          <table cellspacing="0" cellpadding="0">
+            <tr>
+              <td colspan="3">
+                <span class="nolink">Object</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="../icons/LastChild.gif" />
+              </td>
+              <td colspan="2">
+                <a href="T_Aerotech_A3200_Commands_CommandCategory.htm">CommandCategory</a>
+              </td>
+            </tr>
+            <tr>
+              <td> </td>
+              <td>
+                <img src="../icons/LastChild.gif" />
+              </td>
+              <td>
+                <span class="selflink">ModbusCommands</span>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div id="footer">(c) Aerotech, Inc. All rights reserved. </div>
+      <p>Assembly: <span sdata="assembly">Aerotech.A3200</span> (Module: Aerotech.A3200.dll) Version: 6.4.3.32</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,1722 @@
+﻿
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+  <head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8" />
+    <title>PSOCommands Class</title>
+    <link rel="stylesheet" type="text/css" href="../styles/presentation.css" />
+    <link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css" />
+    <script type="text/javascript" src="../scripts/script_prototype.js"> </script>
+    <script type="text/javascript" src="../scripts/EventUtilities.js"> </script>
+    <script type="text/javascript" src="../scripts/StyleUtilities.js"> </script>
+    <script type="text/javascript" src="../scripts/SplitScreen.js"> </script>
+    <script type="text/javascript" src="../scripts/ElementCollection.js"> </script>
+    <script type="text/javascript" src="../scripts/MemberFilter.js"> </script>
+    <script type="text/javascript" src="../scripts/CollapsibleSection.js"> </script>
+    <script type="text/javascript" src="../scripts/LanguageFilter.js"> </script>
+    <script type="text/javascript" src="../scripts/CookieDataStore.js"> </script>
+    <meta name="file" content="T_Aerotech_A3200_Commands_PSOCommands" />
+    
+  </head>
+  <body>
+    <img id="copyImage" style="display:none; height:0; width:0;" src="../icons/copycode.gif" alt="Copy image" title="Copy image" />
+    <img id="copyHoverImage" style="display:none; height:0; width:0;" src="../icons/copycodeHighlight.gif" alt="CopyHover image" title="CopyHover image" />
+    <div id="control">
+      <span class="productTitle">Reference Library</span>
+      <br />
+      <span class="topicTitle">PSOCommands Class</span>
+      <br />
+      <div id="toolbar">
+        <span id="chickenFeet">
+          <a href="R_Project.htm">Namespaces</a> ► <a href="N_Aerotech_A3200_Commands.htm">Aerotech.A3200.Commands</a> ► <span class="selflink">PSOCommands</span></span>
+        <span id="languageFilter">
+          <select id="languageSelector" onchange="var names = this.value.split(' '); toggleVisibleLanguage(names[1]); lfc.switchLanguage(names[0]); store.set('lang',this.value); store.save();">
+            <option value="CSharp cs">C#</option>
+            <option value="VisualBasic vb">Visual Basic</option>
+            <option value="ManagedCPlusPlus cpp">Visual C++</option>
+          </select>
+        </span>
+      </div>
+    </div>
+    <div id="main">
+      <div class="summary">Contains the PSO Commands</div>
+      <div class="section">
+        <div class="sectionTitle" onclick="toggleSection(this.parentNode)">
+          <img src="../icons/collapse_all.gif" /> Declaration Syntax</div>
+        <div class="sectionContent">
+          <div id="syntaxSection">
+            <table class="filter">
+              <tr class="tabs" id="syntaxTabs">
+                <td class="tab" x-lang="CSharp" onclick="toggleClass('syntaxTabs','x-lang','CSharp','activeTab','tab'); toggleStyle('syntaxBlocks','x-lang','CSharp','display','block','none');">C#</td>
+                <td class="tab" x-lang="VisualBasic" onclick="toggleClass('syntaxTabs','x-lang','VisualBasic','activeTab','tab'); toggleStyle('syntaxBlocks','x-lang','VisualBasic','display','block','none');">Visual Basic</td>
+                <td class="tab" x-lang="ManagedCPlusPlus" onclick="toggleClass('syntaxTabs','x-lang','ManagedCPlusPlus','activeTab','tab'); toggleStyle('syntaxBlocks','x-lang','ManagedCPlusPlus','display','block','none');">Visual C++</td>
+              </tr>
+            </table>
+            <div id="syntaxBlocks">
+              <div class="code" x-lang="CSharp">
+                <pre xml:space="preserve">
+<span class="keyword">public</span> <span class="keyword">class</span> <span class="identifier">PSOCommands</span> : <span class="identifier">CommandCategory</span></pre>
+              </div>
+              <div class="code" x-lang="VisualBasic">
+                <pre xml:space="preserve">
+<span class="keyword">Public</span> <span class="keyword">Class</span> <span class="identifier">PSOCommands</span> _
+	<span class="keyword">Inherits</span> <span class="identifier">CommandCategory</span></pre>
+              </div>
+              <div class="code" x-lang="ManagedCPlusPlus">
+                <pre xml:space="preserve">
+<span class="keyword">public</span> <span class="keyword">ref class</span> <span class="identifier">PSOCommands</span> : <span class="keyword">public</span> <span class="identifier">CommandCategory</span></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="sectionTitle" onclick="toggleSection(this.parentNode)">
+          <img src="../icons/collapse_all.gif" /> Members</div>
+        <div class="sectionContent">
+          <div id="allMembersSection">
+            <table class="filter">
+              <tr class="tabs" id="memberTabs">
+                <td class="tab" value="all" onclick="toggleClass('memberTabs','value','all','activeTab','tab'); processSubgroup('all', 'member'); processList('memberList','filterElement','member');">All Members</td>
+                <td class="tab" value="method" onclick="toggleClass('memberTabs','value','method','activeTab','tab'); processSubgroup('method','member'); processList('memberList','filterElement','member');">Methods</td>
+              </tr>
+              <tr>
+                <td class="line" colspan="2">
+                  <label for="public">
+                    <input id="public" type="checkbox" checked="true" onclick="toggleCheckState('public',this.checked); processList('memberList','filterElement','member');" />Public</label>
+                  <br />
+                  <label for="protected">
+                    <input id="protected" type="checkbox" checked="true" onclick="toggleCheckState('protected',this.checked); processList('memberList','filterElement','member');" />Protected</label>
+                </td>
+                <td class="line" colspan="2">
+                  <label for="instance">
+                    <input id="instance" type="checkbox" checked="true" onclick="toggleCheckState('instance',this.checked); processList('memberList','filterElement','member');" />Instance</label>
+                  <br />
+                  <label for="static">
+                    <input id="static" type="checkbox" checked="true" onclick="toggleCheckState('static',this.checked); processList('memberList','filterElement','member');" />Static</label>
+                </td>
+                <td class="line" colspan="2">
+                  <label for="declared">
+                    <input id="declared" type="checkbox" checked="true" onclick="toggleCheckState('declared',this.checked); processList('memberList','filterElement','member');" />Declared</label>
+                  <br />
+                  <label for="inherited">
+                    <input id="inherited" type="checkbox" checked="true" onclick="toggleCheckState('inherited',this.checked); processList('memberList','filterElement','member');" />Inherited</label>
+                </td>
+              </tr>
+            </table>
+            <table class="members" id="memberList">
+              <tr>
+                <th class="iconColumn">Icon</th>
+                <th class="nameColumn">Member</th>
+                <th class="descriptionColumn">Description</th>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_Array.htm">Array(Int32, String, Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Writes data into the PSO array.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_Array_1.htm">Array(String, String, Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Writes data into the PSO array.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_Control.htm">Control(Int32, PsoMode)</a>
+                </td>
+                <td>
+                  <div class="summary">Enables and disables the PSO hardware.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_Control_1.htm">Control(String, PsoMode)</a>
+                </td>
+                <td>
+                  <div class="summary">Enables and disables the PSO hardware.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_DistanceArray.htm">DistanceArray(Int32, Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Specifies the distance that an axis travels between firing events.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_DistanceArray_1.htm">DistanceArray(String, Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Specifies the distance that an axis travels between firing events.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_DistanceFixed.htm">DistanceFixed(Int32, Double)</a>
+                </td>
+                <td>
+                  <div class="summary">Specifies the distance that an axis travels between firing events.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_DistanceFixed_1.htm">DistanceFixed(String, Double)</a>
+                </td>
+                <td>
+                  <div class="summary">Specifies the distance that an axis travels between firing events.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_DistanceOff.htm">DistanceOff(Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Specifies the distance that an axis travels between firing events.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_DistanceOff_1.htm">DistanceOff(String)</a>
+                </td>
+                <td>
+                  <div class="summary">Specifies the distance that an axis travels between firing events.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; inherited">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <span class="nolink">Equals(Object)</span>
+                </td>
+                <td>
+                  <div class="summary">Determines whether the specified <span class="nolink">Object</span> is equal to the current <span class="nolink">Object</span>.</div> (Inherited from <span class="nolink">Object</span>.)<br /></td>
+              </tr>
+              <tr data="method; protected; instance; inherited">
+                <td>
+                  <img src="../icons/protmethod.gif" />
+                </td>
+                <td>
+                  <span class="nolink">Finalize<span class="languageSpecificText"><span class="cs">()</span><span class="vb"></span><span class="cpp">()</span><span class="nu">()</span><span class="fs">()</span></span></span>
+                </td>
+                <td>
+                  <div class="summary">Allows an <span class="nolink">Object</span> to attempt to free resources and perform other cleanup operations before the <span class="nolink">Object</span> is reclaimed by garbage collection.</div> (Inherited from <span class="nolink">Object</span>.)<br /></td>
+              </tr>
+              <tr data="method; public; instance; inherited">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <span class="nolink">GetHashCode<span class="languageSpecificText"><span class="cs">()</span><span class="vb"></span><span class="cpp">()</span><span class="nu">()</span><span class="fs">()</span></span></span>
+                </td>
+                <td>
+                  <div class="summary">Serves as a hash function for a particular type. <span class="nolink">GetHashCode<span class="languageSpecificText"><span class="cs">()</span><span class="vb"></span><span class="cpp">()</span><span class="nu">()</span><span class="fs">()</span></span></span> is suitable for use in hashing algorithms and data structures like a hash table.</div> (Inherited from <span class="nolink">Object</span>.)<br /></td>
+              </tr>
+              <tr data="method; public; instance; inherited">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <span class="nolink">GetType<span class="languageSpecificText"><span class="cs">()</span><span class="vb"></span><span class="cpp">()</span><span class="nu">()</span><span class="fs">()</span></span></span>
+                </td>
+                <td>
+                  <div class="summary">Gets the <span class="nolink">Type</span> of the current instance.</div> (Inherited from <span class="nolink">Object</span>.)<br /></td>
+              </tr>
+              <tr data="method; protected; instance; inherited">
+                <td>
+                  <img src="../icons/protmethod.gif" />
+                </td>
+                <td>
+                  <span class="nolink">MemberwiseClone<span class="languageSpecificText"><span class="cs">()</span><span class="vb"></span><span class="cpp">()</span><span class="nu">()</span><span class="fs">()</span></span></span>
+                </td>
+                <td>
+                  <div class="summary">Creates a shallow copy of the current <span class="nolink">Object</span>.</div> (Inherited from <span class="nolink">Object</span>.)<br /></td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputBitMap.htm">OutputBitMap(Int32, Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputBitMap_2.htm">OutputBitMap(String, Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputBitMap_1.htm">OutputBitMap(Int32, Int32, Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputBitMap_3.htm">OutputBitMap(String, Int32, Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputBitMapMode.htm">OutputBitMapMode(Int32, Int32, Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputBitMapMode_1.htm">OutputBitMapMode(String, Int32, Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputCombine.htm">OutputCombine(Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO combine mode (adding Aux. Output to the Main Output signal).</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputCombine_1.htm">OutputCombine(String, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO combine mode (adding Aux. Output to the Main Output signal).</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputControl.htm">OutputControl(Int32, Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputControl_1.htm">OutputControl(String, Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputPulse.htm">OutputPulse(Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputPulse_2.htm">OutputPulse(String)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputPulse_1.htm">OutputPulse(Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputPulse_3.htm">OutputPulse(String, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputPulse2WindowMask.htm">OutputPulse2WindowMask(Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputPulse2WindowMask_2.htm">OutputPulse2WindowMask(String)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputPulse2WindowMask_1.htm">OutputPulse2WindowMask(Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputPulse2WindowMask_3.htm">OutputPulse2WindowMask(String, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputPulseBitMask.htm">OutputPulseBitMask(Int32, Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputPulseBitMask_2.htm">OutputPulseBitMask(String, Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputPulseBitMask_1.htm">OutputPulseBitMask(Int32, Int32, Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputPulseBitMask_3.htm">OutputPulseBitMask(String, Int32, Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputPulseBitMaskExtSync.htm">OutputPulseBitMaskExtSync(Int32, Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputPulseBitMaskExtSync_1.htm">OutputPulseBitMaskExtSync(String, Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputPulseExtSync.htm">OutputPulseExtSync(Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputPulseExtSync_1.htm">OutputPulseExtSync(String)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputPulseLaserMask.htm">OutputPulseLaserMask(Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputPulseLaserMask_1.htm">OutputPulseLaserMask(String)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputPulseLaserMaskExtSync.htm">OutputPulseLaserMaskExtSync(Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputPulseLaserMaskExtSync_1.htm">OutputPulseLaserMaskExtSync(String)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputPulseWindowBitMask.htm">OutputPulseWindowBitMask(Int32, Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputPulseWindowBitMask_1.htm">OutputPulseWindowBitMask(String, Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputPulseWindowBitMaskEdgeMode.htm">OutputPulseWindowBitMaskEdgeMode(Int32, Int32, Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputPulseWindowBitMaskEdgeMode_1.htm">OutputPulseWindowBitMaskEdgeMode(String, Int32, Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputPulseWindowBitMaskExtSync.htm">OutputPulseWindowBitMaskExtSync(Int32, Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputPulseWindowBitMaskExtSync_1.htm">OutputPulseWindowBitMaskExtSync(String, Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputPulseWindowBitMaskExtSyncEdgeMode.htm">OutputPulseWindowBitMaskExtSyncEdgeMode(Int32, Int32, Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputPulseWindowBitMaskExtSyncEdgeMode_1.htm">OutputPulseWindowBitMaskExtSyncEdgeMode(String, Int32, Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputPulseWindowMask.htm">OutputPulseWindowMask(Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputPulseWindowMask_2.htm">OutputPulseWindowMask(String)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputPulseWindowMask_1.htm">OutputPulseWindowMask(Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputPulseWindowMask_3.htm">OutputPulseWindowMask(String, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputPulseWindowMaskEdgeMode.htm">OutputPulseWindowMaskEdgeMode(Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputPulseWindowMaskEdgeMode_2.htm">OutputPulseWindowMaskEdgeMode(String, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputPulseWindowMaskEdgeMode_1.htm">OutputPulseWindowMaskEdgeMode(Int32, Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputPulseWindowMaskEdgeMode_3.htm">OutputPulseWindowMaskEdgeMode(String, Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputPulseWindowMaskExtSync.htm">OutputPulseWindowMaskExtSync(Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputPulseWindowMaskExtSync_1.htm">OutputPulseWindowMaskExtSync(String)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputPulseWindowMaskExtSyncEdgeMode.htm">OutputPulseWindowMaskExtSyncEdgeMode(Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputPulseWindowMaskExtSyncEdgeMode_1.htm">OutputPulseWindowMaskExtSyncEdgeMode(String, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputPulseWindowMaskExtSyncHard.htm">OutputPulseWindowMaskExtSyncHard(Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputPulseWindowMaskExtSyncHard_1.htm">OutputPulseWindowMaskExtSyncHard(String)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputPulseWindowMaskExtSyncHardEdgeMode.htm">OutputPulseWindowMaskExtSyncHardEdgeMode(Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputPulseWindowMaskExtSyncHardEdgeMode_1.htm">OutputPulseWindowMaskExtSyncHardEdgeMode(String, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputPulseWindowMaskHard.htm">OutputPulseWindowMaskHard(Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputPulseWindowMaskHard_2.htm">OutputPulseWindowMaskHard(String)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputPulseWindowMaskHard_1.htm">OutputPulseWindowMaskHard(Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputPulseWindowMaskHard_3.htm">OutputPulseWindowMaskHard(String, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputPulseWindowMaskHardEdgeMode.htm">OutputPulseWindowMaskHardEdgeMode(Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputPulseWindowMaskHardEdgeMode_2.htm">OutputPulseWindowMaskHardEdgeMode(String, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputPulseWindowMaskHardEdgeMode_1.htm">OutputPulseWindowMaskHardEdgeMode(Int32, Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputPulseWindowMaskHardEdgeMode_3.htm">OutputPulseWindowMaskHardEdgeMode(String, Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputToggle.htm">OutputToggle(Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputToggle_2.htm">OutputToggle(String)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputToggle_1.htm">OutputToggle(Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputToggle_3.htm">OutputToggle(String, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputWindow.htm">OutputWindow(Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputWindow_2.htm">OutputWindow(String)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputWindow_1.htm">OutputWindow(Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_OutputWindow_3.htm">OutputWindow(String, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Sets the PSO output mode.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_Pulse.htm">Pulse(Int32, Double, Double)</a>
+                </td>
+                <td>
+                  <div class="summary">Configures the pulse sequence that is used for PSO.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_Pulse_1.htm">Pulse(String, Double, Double)</a>
+                </td>
+                <td>
+                  <div class="summary">Configures the pulse sequence that is used for PSO.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_PulseCyclesOrDelayCyclesAndDelay.htm">PulseCyclesOrDelayCyclesAndDelay(Int32, Double, Double, Double, Double)</a>
+                </td>
+                <td>
+                  <div class="summary">Configures the pulse sequence that is used for PSO.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_PulseCyclesOrDelayCyclesAndDelay_1.htm">PulseCyclesOrDelayCyclesAndDelay(String, Double, Double, Double, Double)</a>
+                </td>
+                <td>
+                  <div class="summary">Configures the pulse sequence that is used for PSO.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_PulseCyclesOrDelayCyclesOnly.htm">PulseCyclesOrDelayCyclesOnly(Int32, Double, Double, Double)</a>
+                </td>
+                <td>
+                  <div class="summary">Configures the pulse sequence that is used for PSO.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_PulseCyclesOrDelayCyclesOnly_1.htm">PulseCyclesOrDelayCyclesOnly(String, Double, Double, Double)</a>
+                </td>
+                <td>
+                  <div class="summary">Configures the pulse sequence that is used for PSO.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_PulseCyclesOrDelayDelayOnly.htm">PulseCyclesOrDelayDelayOnly(Int32, Double, Double, Double)</a>
+                </td>
+                <td>
+                  <div class="summary">Configures the pulse sequence that is used for PSO.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_PulseCyclesOrDelayDelayOnly_1.htm">PulseCyclesOrDelayDelayOnly(String, Double, Double, Double)</a>
+                </td>
+                <td>
+                  <div class="summary">Configures the pulse sequence that is used for PSO.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; inherited">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <span class="nolink">ToString<span class="languageSpecificText"><span class="cs">()</span><span class="vb"></span><span class="cpp">()</span><span class="nu">()</span><span class="fs">()</span></span></span>
+                </td>
+                <td>
+                  <div class="summary">Returns a <span class="nolink">String</span> that represents the current <span class="nolink">Object</span>.</div> (Inherited from <span class="nolink">Object</span>.)<br /></td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_TrackDirection.htm">TrackDirection(Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Configures the PSO distance tracking counters.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_TrackDirection_1.htm">TrackDirection(String, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Configures the PSO distance tracking counters.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_TrackInput.htm">TrackInput(Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Configures the PSO distance tracking counters.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_TrackInput_3.htm">TrackInput(String, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Configures the PSO distance tracking counters.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_TrackInput_1.htm">TrackInput(Int32, Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Configures the PSO distance tracking counters.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_TrackInput_4.htm">TrackInput(String, Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Configures the PSO distance tracking counters.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_TrackInput_2.htm">TrackInput(Int32, Int32, Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Configures the PSO distance tracking counters.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_TrackInput_5.htm">TrackInput(String, Int32, Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Configures the PSO distance tracking counters.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_TrackReset.htm">TrackReset(Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Configures the PSO distance tracking counters.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_TrackReset_1.htm">TrackReset(String, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Configures the PSO distance tracking counters.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_TrackScale.htm">TrackScale(Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Configures the PSO distance tracking counters.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_TrackScale_3.htm">TrackScale(String, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Configures the PSO distance tracking counters.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_TrackScale_1.htm">TrackScale(Int32, Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Configures the PSO distance tracking counters.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_TrackScale_4.htm">TrackScale(String, Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Configures the PSO distance tracking counters.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_TrackScale_2.htm">TrackScale(Int32, Int32, Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Configures the PSO distance tracking counters.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_TrackScale_5.htm">TrackScale(String, Int32, Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Configures the PSO distance tracking counters.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_WindowControl.htm">WindowControl(Int32, PsoWindowDependance)</a>
+                </td>
+                <td>
+                  <div class="summary">Specifies that the two PSO window counters are either co-dependent or independent.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_WindowControl_1.htm">WindowControl(String, PsoWindowDependance)</a>
+                </td>
+                <td>
+                  <div class="summary">Specifies that the two PSO window counters are either co-dependent or independent.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_WindowInput.htm">WindowInput(Int32, Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Configures which encoder channel is connected to each window.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_WindowInput_1.htm">WindowInput(String, Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Configures which encoder channel is connected to each window.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_WindowInputInvert.htm">WindowInputInvert(Int32, Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Configures which encoder channel is connected to each window.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_WindowInputInvert_1.htm">WindowInputInvert(String, Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Configures which encoder channel is connected to each window.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_WindowLoad.htm">WindowLoad(Int32, Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Loads the specified window counter with a value.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_WindowLoad_1.htm">WindowLoad(String, Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Loads the specified window counter with a value.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_WindowOff.htm">WindowOff(Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Disables the PSO Window Hardware.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_WindowOff_1.htm">WindowOff(String, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Disables the PSO Window Hardware.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_WindowOn.htm">WindowOn(Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Enables the PSO Window Hardware.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_WindowOn_1.htm">WindowOn(String, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Enables the PSO Window Hardware.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_WindowOnInvert.htm">WindowOnInvert(Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Enables the PSO Window Hardware.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_WindowOnInvert_1.htm">WindowOnInvert(String, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Enables the PSO Window Hardware.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_WindowRange.htm">WindowRange(Int32, Int32, Double, Double)</a>
+                </td>
+                <td>
+                  <div class="summary">Specifies the low and high window-range values for the specified PSO window.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_WindowRange_1.htm">WindowRange(String, Int32, Double, Double)</a>
+                </td>
+                <td>
+                  <div class="summary">Specifies the low and high window-range values for the specified PSO window.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_WindowRangeArray.htm">WindowRangeArray(Int32, Int32, Double, Double)</a>
+                </td>
+                <td>
+                  <div class="summary">Specifies the window range based on data in the PSO array.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_WindowRangeArray_1.htm">WindowRangeArray(String, Int32, Double, Double)</a>
+                </td>
+                <td>
+                  <div class="summary">Specifies the window range based on data in the PSO array.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_WindowRangeArrayEdge.htm">WindowRangeArrayEdge(Int32, Int32, Double, Double, Double)</a>
+                </td>
+                <td>
+                  <div class="summary">Specifies the window range based on data in the PSO array.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_WindowRangeArrayEdge_1.htm">WindowRangeArrayEdge(String, Int32, Double, Double, Double)</a>
+                </td>
+                <td>
+                  <div class="summary">Specifies the window range based on data in the PSO array.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_WindowReset.htm">WindowReset(Int32, Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Resets the window counter to 0 based on the encoder marker signal.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Commands_PSOCommands_WindowReset_1.htm">WindowReset(String, Int32, Int32)</a>
+                </td>
+                <td>
+                  <div class="summary">Resets the window counter to 0 based on the encoder marker signal.</div>
+                  <br />
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="sectionTitle" onclick="toggleSection(this.parentNode)">
+          <img src="../icons/collapse_all.gif" /> Inheritance Hierarchy</div>
+        <div class="sectionContent">
+          <table cellspacing="0" cellpadding="0">
+            <tr>
+              <td colspan="3">
+                <span class="nolink">Object</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="../icons/LastChild.gif" />
+              </td>
+              <td colspan="2">
+                <a href="T_Aerotech_A3200_Commands_CommandCategory.htm">CommandCategory</a>
+              </td>
+            </tr>
+            <tr>
+              <td> </td>
+              <td>
+                <img src="../icons/LastChild.gif" />
+              </td>
+              <td>
+                <span class="selflink">PSOCommands</span>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div id="footer">(c) Aerotech, Inc. All rights reserved. </div>
+      <p>Assembly: <span sdata="assembly">Aerotech.A3200</span> (Module: Aerotech.A3200.dll) Version: 6.4.3.32</p>
+    </div>
+  </body>
+</html>
