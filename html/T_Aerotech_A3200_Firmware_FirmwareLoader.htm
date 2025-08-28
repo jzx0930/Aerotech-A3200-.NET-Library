@@ -1,0 +1,391 @@
+﻿
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+  <head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8" />
+    <title>FirmwareLoader Class</title>
+    <link rel="stylesheet" type="text/css" href="../styles/presentation.css" />
+    <link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css" />
+    <script type="text/javascript" src="../scripts/script_prototype.js"> </script>
+    <script type="text/javascript" src="../scripts/EventUtilities.js"> </script>
+    <script type="text/javascript" src="../scripts/StyleUtilities.js"> </script>
+    <script type="text/javascript" src="../scripts/SplitScreen.js"> </script>
+    <script type="text/javascript" src="../scripts/ElementCollection.js"> </script>
+    <script type="text/javascript" src="../scripts/MemberFilter.js"> </script>
+    <script type="text/javascript" src="../scripts/CollapsibleSection.js"> </script>
+    <script type="text/javascript" src="../scripts/LanguageFilter.js"> </script>
+    <script type="text/javascript" src="../scripts/CookieDataStore.js"> </script>
+    <meta name="file" content="T_Aerotech_A3200_Firmware_FirmwareLoader" />
+    
+  </head>
+  <body>
+    <img id="copyImage" style="display:none; height:0; width:0;" src="../icons/copycode.gif" alt="Copy image" title="Copy image" />
+    <img id="copyHoverImage" style="display:none; height:0; width:0;" src="../icons/copycodeHighlight.gif" alt="CopyHover image" title="CopyHover image" />
+    <div id="control">
+      <span class="productTitle">Reference Library</span>
+      <br />
+      <span class="topicTitle">FirmwareLoader Class</span>
+      <br />
+      <div id="toolbar">
+        <span id="chickenFeet">
+          <a href="R_Project.htm">Namespaces</a> ► <a href="N_Aerotech_A3200_Firmware.htm">Aerotech.A3200.Firmware</a> ► <span class="selflink">FirmwareLoader</span></span>
+        <span id="languageFilter">
+          <select id="languageSelector" onchange="var names = this.value.split(' '); toggleVisibleLanguage(names[1]); lfc.switchLanguage(names[0]); store.set('lang',this.value); store.save();">
+            <option value="CSharp cs">C#</option>
+            <option value="VisualBasic vb">Visual Basic</option>
+            <option value="ManagedCPlusPlus cpp">Visual C++</option>
+          </select>
+        </span>
+      </div>
+    </div>
+    <div id="main">
+      <div class="summary">A class that can update the firmware on connected drives and hardware.</div>
+      <div class="section">
+        <div class="sectionTitle" onclick="toggleSection(this.parentNode)">
+          <img src="../icons/collapse_all.gif" /> Declaration Syntax</div>
+        <div class="sectionContent">
+          <div id="syntaxSection">
+            <table class="filter">
+              <tr class="tabs" id="syntaxTabs">
+                <td class="tab" x-lang="CSharp" onclick="toggleClass('syntaxTabs','x-lang','CSharp','activeTab','tab'); toggleStyle('syntaxBlocks','x-lang','CSharp','display','block','none');">C#</td>
+                <td class="tab" x-lang="VisualBasic" onclick="toggleClass('syntaxTabs','x-lang','VisualBasic','activeTab','tab'); toggleStyle('syntaxBlocks','x-lang','VisualBasic','display','block','none');">Visual Basic</td>
+                <td class="tab" x-lang="ManagedCPlusPlus" onclick="toggleClass('syntaxTabs','x-lang','ManagedCPlusPlus','activeTab','tab'); toggleStyle('syntaxBlocks','x-lang','ManagedCPlusPlus','display','block','none');">Visual C++</td>
+              </tr>
+            </table>
+            <div id="syntaxBlocks">
+              <div class="code" x-lang="CSharp">
+                <pre xml:space="preserve">
+<span class="keyword">public</span> <span class="keyword">class</span> <span class="identifier">FirmwareLoader</span> : <span class="identifier">IDisposable</span></pre>
+              </div>
+              <div class="code" x-lang="VisualBasic">
+                <pre xml:space="preserve">
+<span class="keyword">Public</span> <span class="keyword">Class</span> <span class="identifier">FirmwareLoader</span> _
+	<span class="keyword">Implements</span> <span class="identifier">IDisposable</span></pre>
+              </div>
+              <div class="code" x-lang="ManagedCPlusPlus">
+                <pre xml:space="preserve">
+<span class="keyword">public</span> <span class="keyword">ref class</span> <span class="identifier">FirmwareLoader</span> : <span class="identifier">IDisposable</span></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="sectionTitle" onclick="toggleSection(this.parentNode)">
+          <img src="../icons/collapse_all.gif" /> Members</div>
+        <div class="sectionContent">
+          <div id="allMembersSection">
+            <table class="filter">
+              <tr class="tabs" id="memberTabs">
+                <td class="tab" value="all" onclick="toggleClass('memberTabs','value','all','activeTab','tab'); processSubgroup('all', 'member'); processList('memberList','filterElement','member');">All Members</td>
+                <td class="tab" value="constructor" onclick="toggleClass('memberTabs','value','constructor','activeTab','tab'); processSubgroup('constructor','member');processList('memberList','filterElement','member');">Constructors</td>
+                <td class="tab" value="method" onclick="toggleClass('memberTabs','value','method','activeTab','tab'); processSubgroup('method','member'); processList('memberList','filterElement','member');">Methods</td>
+                <td class="tab" value="property" onclick="toggleClass('memberTabs','value','property','activeTab','tab'); processSubgroup('property','member'); processList('memberList','filterElement','member');">Properties</td>
+              </tr>
+              <tr>
+                <td class="line" colspan="2">
+                  <label for="public">
+                    <input id="public" type="checkbox" checked="true" onclick="toggleCheckState('public',this.checked); processList('memberList','filterElement','member');" />Public</label>
+                  <br />
+                  <label for="protected">
+                    <input id="protected" type="checkbox" checked="true" onclick="toggleCheckState('protected',this.checked); processList('memberList','filterElement','member');" />Protected</label>
+                </td>
+                <td class="line" colspan="2">
+                  <label for="instance">
+                    <input id="instance" type="checkbox" checked="true" onclick="toggleCheckState('instance',this.checked); processList('memberList','filterElement','member');" />Instance</label>
+                  <br />
+                  <label for="static">
+                    <input id="static" type="checkbox" checked="true" onclick="toggleCheckState('static',this.checked); processList('memberList','filterElement','member');" />Static</label>
+                </td>
+                <td class="line" colspan="2">
+                  <label for="declared">
+                    <input id="declared" type="checkbox" checked="true" onclick="toggleCheckState('declared',this.checked); processList('memberList','filterElement','member');" />Declared</label>
+                  <br />
+                  <label for="inherited">
+                    <input id="inherited" type="checkbox" checked="true" onclick="toggleCheckState('inherited',this.checked); processList('memberList','filterElement','member');" />Inherited</label>
+                </td>
+              </tr>
+            </table>
+            <table class="members" id="memberList">
+              <tr>
+                <th class="iconColumn">Icon</th>
+                <th class="nameColumn">Member</th>
+                <th class="descriptionColumn">Description</th>
+              </tr>
+              <tr data="constructor; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Firmware_FirmwareLoader__ctor.htm">FirmwareLoader<span class="languageSpecificText"><span class="cs">()</span><span class="vb"></span><span class="cpp">()</span><span class="nu">()</span><span class="fs">()</span></span></a>
+                </td>
+                <td>
+                  <div class="summary">
+            Creates a new <span class="selflink">FirmwareLoader</span> object that can be used to load firmware to connected drives and hardware.
+            </div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Firmware_FirmwareLoader_CheckIfPCRestartRequired.htm">CheckIfPCRestartRequired(String)</a>
+                </td>
+                <td>
+                  <div class="summary">
+            Returns whether or not a PC restart will be required after calling <a href="M_Aerotech_A3200_Firmware_FirmwareLoader_LoadAndCommitHyperWireCard.htm">LoadAndCommitHyperWireCard(String)</a>
+            to load the given firmware to the active HyperWire card.
+            </div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Firmware_FirmwareLoader_Commit.htm">Commit<span class="languageSpecificText"><span class="cs">()</span><span class="vb"></span><span class="cpp">()</span><span class="nu">()</span><span class="fs">()</span></span></a>
+                </td>
+                <td>
+                  <div class="summary">Commits the firmware on the drives to non-volatile memory.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Firmware_FirmwareLoader_Commit_1.htm">Commit(ProgressChangedEventHandler)</a>
+                </td>
+                <td>
+                  <div class="summary">Commits the firmware on the drives to non-volatile memory.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Firmware_FirmwareLoader_Dispose.htm">Dispose<span class="languageSpecificText"><span class="cs">()</span><span class="vb"></span><span class="cpp">()</span><span class="nu">()</span><span class="fs">()</span></span></a>
+                </td>
+                <td>
+                  <div class="summary">Disposes of any resources that were used for loading firmware.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="property; public; instance; declared">
+                <td>
+                  <img src="../icons/pubproperty.gif" />
+                </td>
+                <td>
+                  <a href="P_Aerotech_A3200_Firmware_FirmwareLoader_DriveCommunicationType.htm">DriveCommunicationType</a>
+                </td>
+                <td>
+                  <div class="summary">
+            Gets the active communication type used to communicate with the connected drives.
+            </div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="property; public; instance; declared">
+                <td>
+                  <img src="../icons/pubproperty.gif" />
+                </td>
+                <td>
+                  <a href="P_Aerotech_A3200_Firmware_FirmwareLoader_Drives.htm">Drives</a>
+                </td>
+                <td>
+                  <div class="summary">
+            Gets the collection of connected drives.
+            </div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; inherited">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <span class="nolink">Equals(Object)</span>
+                </td>
+                <td>
+                  <div class="summary">Determines whether the specified <span class="nolink">Object</span> is equal to the current <span class="nolink">Object</span>.</div> (Inherited from <span class="nolink">Object</span>.)<br /></td>
+              </tr>
+              <tr data="method; protected; instance; declared">
+                <td>
+                  <img src="../icons/protmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Firmware_FirmwareLoader_Finalize.htm">Finalize<span class="languageSpecificText"><span class="cs">()</span><span class="vb"></span><span class="cpp">()</span><span class="nu">()</span><span class="fs">()</span></span></a>
+                </td>
+                <td>
+                  <div class="summary">Releases any resources that were used for loading firmware.</div> (Overrides <span class="nolink">Object</span>.<span class="nolink">Finalize<span class="languageSpecificText"><span class="cs">()</span><span class="vb"></span><span class="cpp">()</span><span class="nu">()</span><span class="fs">()</span></span></span>.)<br /></td>
+              </tr>
+              <tr data="method; public; instance; inherited">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <span class="nolink">GetHashCode<span class="languageSpecificText"><span class="cs">()</span><span class="vb"></span><span class="cpp">()</span><span class="nu">()</span><span class="fs">()</span></span></span>
+                </td>
+                <td>
+                  <div class="summary">Serves as a hash function for a particular type. <span class="nolink">GetHashCode<span class="languageSpecificText"><span class="cs">()</span><span class="vb"></span><span class="cpp">()</span><span class="nu">()</span><span class="fs">()</span></span></span> is suitable for use in hashing algorithms and data structures like a hash table.</div> (Inherited from <span class="nolink">Object</span>.)<br /></td>
+              </tr>
+              <tr data="method; public; instance; inherited">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <span class="nolink">GetType<span class="languageSpecificText"><span class="cs">()</span><span class="vb"></span><span class="cpp">()</span><span class="nu">()</span><span class="fs">()</span></span></span>
+                </td>
+                <td>
+                  <div class="summary">Gets the <span class="nolink">Type</span> of the current instance.</div> (Inherited from <span class="nolink">Object</span>.)<br /></td>
+              </tr>
+              <tr data="property; public; instance; declared">
+                <td>
+                  <img src="../icons/pubproperty.gif" />
+                </td>
+                <td>
+                  <a href="P_Aerotech_A3200_Firmware_FirmwareLoader_HyperWireCardInformation.htm">HyperWireCardInformation</a>
+                </td>
+                <td>
+                  <div class="summary">
+            Gets information for the active HyperWire card used to communicate to the connected drives, or null if there is no active HyperWire card.
+            </div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Firmware_FirmwareLoader_IdentifyDrives.htm">IdentifyDrives<span class="languageSpecificText"><span class="cs">()</span><span class="vb"></span><span class="cpp">()</span><span class="nu">()</span><span class="fs">()</span></span></a>
+                </td>
+                <td>
+                  <div class="summary">Identifies any connected drives and updates the <a href="P_Aerotech_A3200_Firmware_FirmwareLoader_Drives.htm">Drives</a> property.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Firmware_FirmwareLoader_Load.htm">Load(IEnumerable<span class="languageSpecificText"><span class="cs">&lt;</span><span class="vb">(Of </span><span class="cpp">&lt;</span><span class="fs">&lt;'</span><span class="nu">(</span></span>DriveInformation<span class="languageSpecificText"><span class="cs">&gt;</span><span class="vb">)</span><span class="cpp">&gt;</span><span class="fs">&gt;</span><span class="nu">)</span></span>, String)</a>
+                </td>
+                <td>
+                  <div class="summary">Updates firmware on the given drives.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Firmware_FirmwareLoader_Load_1.htm">Load(IEnumerable<span class="languageSpecificText"><span class="cs">&lt;</span><span class="vb">(Of </span><span class="cpp">&lt;</span><span class="fs">&lt;'</span><span class="nu">(</span></span>DriveInformation<span class="languageSpecificText"><span class="cs">&gt;</span><span class="vb">)</span><span class="cpp">&gt;</span><span class="fs">&gt;</span><span class="nu">)</span></span>, String, ProgressChangedEventHandler)</a>
+                </td>
+                <td>
+                  <div class="summary">Updates firmware on the given drives.</div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Firmware_FirmwareLoader_LoadAndCommitHyperWireCard.htm">LoadAndCommitHyperWireCard(String)</a>
+                </td>
+                <td>
+                  <div class="summary">
+            Loads and commits the given firwmare to the active HyperWire card. Call <a href="M_Aerotech_A3200_Firmware_FirmwareLoader_CheckIfPCRestartRequired.htm">CheckIfPCRestartRequired(String)</a>
+            to see if a PC restart will be required after loading the HyperWire card firmware.
+            </div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; public; instance; declared">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <a href="M_Aerotech_A3200_Firmware_FirmwareLoader_LoadAndCommitHyperWireCard_1.htm">LoadAndCommitHyperWireCard(String, ProgressChangedEventHandler)</a>
+                </td>
+                <td>
+                  <div class="summary">
+            Loads and commits the given firwmare to the active HyperWire card. Call <a href="M_Aerotech_A3200_Firmware_FirmwareLoader_CheckIfPCRestartRequired.htm">CheckIfPCRestartRequired(String)</a>
+            to see if a PC restart will be required after loading the HyperWire card firmware.
+            </div>
+                  <br />
+                </td>
+              </tr>
+              <tr data="method; protected; instance; inherited">
+                <td>
+                  <img src="../icons/protmethod.gif" />
+                </td>
+                <td>
+                  <span class="nolink">MemberwiseClone<span class="languageSpecificText"><span class="cs">()</span><span class="vb"></span><span class="cpp">()</span><span class="nu">()</span><span class="fs">()</span></span></span>
+                </td>
+                <td>
+                  <div class="summary">Creates a shallow copy of the current <span class="nolink">Object</span>.</div> (Inherited from <span class="nolink">Object</span>.)<br /></td>
+              </tr>
+              <tr data="method; public; instance; inherited">
+                <td>
+                  <img src="../icons/pubmethod.gif" />
+                </td>
+                <td>
+                  <span class="nolink">ToString<span class="languageSpecificText"><span class="cs">()</span><span class="vb"></span><span class="cpp">()</span><span class="nu">()</span><span class="fs">()</span></span></span>
+                </td>
+                <td>
+                  <div class="summary">Returns a <span class="nolink">String</span> that represents the current <span class="nolink">Object</span>.</div> (Inherited from <span class="nolink">Object</span>.)<br /></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="sectionTitle" onclick="toggleSection(this.parentNode)">
+          <img src="../icons/collapse_all.gif" /> Remarks</div>
+        <div class="sectionContent">
+          <p>Caution should be taken when using this class, it is possible to make drives unusable.</p>
+          <p>The proper order of operations is:</p>
+          <ul>
+            <li>Call <a href="M_Aerotech_A3200_Firmware_FirmwareLoader_IdentifyDrives.htm">IdentifyDrives<span class="languageSpecificText"><span class="cs">()</span><span class="vb"></span><span class="cpp">()</span><span class="nu">()</span><span class="fs">()</span></span></a> to find out which drives can be loaded.</li>
+            <li>Call <a href="M_Aerotech_A3200_Firmware_FirmwareLoader_Load.htm">Load(IEnumerable<span class="languageSpecificText"><span class="cs">&lt;</span><span class="vb">(Of </span><span class="cpp">&lt;</span><span class="fs">&lt;'</span><span class="nu">(</span></span>DriveInformation<span class="languageSpecificText"><span class="cs">&gt;</span><span class="vb">)</span><span class="cpp">&gt;</span><span class="fs">&gt;</span><span class="nu">)</span></span>, String)</a> to load new firmware on the connected drives.</li>
+            <li>Call <a href="M_Aerotech_A3200_Firmware_FirmwareLoader_Commit.htm">Commit<span class="languageSpecificText"><span class="cs">()</span><span class="vb"></span><span class="cpp">()</span><span class="nu">()</span><span class="fs">()</span></span></a> to commit the firmware to non-volatile memory.</li>
+            <li>Call <a href="M_Aerotech_A3200_Firmware_FirmwareLoader_LoadAndCommitHyperWireCard.htm">LoadAndCommitHyperWireCard(String)</a> to load and commit new firmware to the active HyperWire card (if using a HyperWire card).</li>
+            <li>Call <a href="M_Aerotech_A3200_Firmware_FirmwareLoader_CheckIfPCRestartRequired.htm">CheckIfPCRestartRequired(String)</a> to see if a PC restart is required after loading firmware on the active HyperWire card (if using a HyperWire card).</li>
+          </ul>
+        </div>
+      </div>
+      <div class="section">
+        <div class="sectionTitle" onclick="toggleSection(this.parentNode)">
+          <img src="../icons/collapse_all.gif" /> Inheritance Hierarchy</div>
+        <div class="sectionContent">
+          <table cellspacing="0" cellpadding="0">
+            <tr>
+              <td colspan="2">
+                <span class="nolink">Object</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="../icons/LastChild.gif" />
+              </td>
+              <td>
+                <span class="selflink">FirmwareLoader</span>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div id="footer">(c) Aerotech, Inc. All rights reserved. </div>
+      <p>Assembly: <span sdata="assembly">Aerotech.A3200</span> (Module: Aerotech.A3200.dll) Version: 6.4.3.32</p>
+    </div>
+  </body>
+</html>
